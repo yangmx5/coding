@@ -3,12 +3,19 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/src/Com/wangyi/TheMaxOddNum.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/LeetCode/UniqueBinarySearchTrees.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/base/BinarySearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/DfsTheTree.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/base/HeapSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/MergeSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/QuickSort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/base/RadixSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/ShellSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/copy/BinarySearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/forwardoffer/AllPaiLie.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/forwardoffer/DeleteDuplication.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/forwardoffer/TheMaxAdd.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/maxadd/RequestTheM.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/Java8Tester.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/baseclass/Java8Tester.java" charset="GBK" />
   </component>
 </project>

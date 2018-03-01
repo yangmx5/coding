@@ -1,3 +1,4 @@
+/*
 package test;
 
 public class Java8Tester {
@@ -65,4 +66,4 @@ public class Java8Tester {
 	   private int operate(int a, int b, MathOperation mathOperation){
 	      return mathOperation.operation(a, b);
 	   }
-	}
+	}*/

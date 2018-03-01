@@ -9,7 +9,7 @@ public class TheMaxAdd {
 	
 	/*
 	 * 子数组最大连续和
-	 * 
+	 *
 	 */
 	
 	public static int FindGreatestSumOfSubArray(int [] array){
@@ -41,7 +41,7 @@ public class TheMaxAdd {
 			return 0;
 		
 	}
-	
+
 	
 	public static int maxSum(int[] arr) {
 		if (arr == null || arr.length == 0) {
@@ -60,7 +60,8 @@ public class TheMaxAdd {
 	public static void main(String[] args) {
 		
 		int [] temp = {1, 5, -1 ,3};
-		System.out.println(maxSum(temp));
+		int [] temp1 = {-1};
+		System.out.println(maxSum(temp1));
 		
 		
 	}

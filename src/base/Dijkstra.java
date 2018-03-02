@@ -20,7 +20,7 @@ public class Dijkstra {
                     matrix[i][j] = Integer.MAX_VALUE;
             }
         }
-
+/*
         matrix[0][1] = 50;
         matrix[0][2] = 10;
         matrix[0][4] = 45;
@@ -31,11 +31,23 @@ public class Dijkstra {
         matrix[3][1] = 20;
         matrix[3][4] = 35;
         matrix[3][5] = 3;
-        matrix[4][3] = 30;
+        matrix[4][3] = 30;*/
+
+        matrix[0][1] = 1;
+        matrix[0][2] = 12;
+        matrix[1][2] = 9;
+        matrix[1][3] = 3;
+        matrix[2][4] = 5;
+        matrix[3][2] = 4;
+        matrix[3][4] = 13;
+        matrix[3][5] = 15;
+        matrix[4][5] = 4;
+
+
 
 
         int[] dist = matrix[0];
-        boolean[] s = {true, false, false, false, false, false};
+        boolean[] s = {true, false, false, false, false, false};//flag the node has been foreach
 
         for (; ; ) {
             int min = Integer.MAX_VALUE;

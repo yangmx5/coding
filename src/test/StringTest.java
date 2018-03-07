@@ -19,6 +19,9 @@ public class StringTest {
 		System.out.println(one);
 		System.out.println(temp2);
 
+		double d = 0.00234520000;
+		System.out.println(String.valueOf(d));
+
 
 
 	}

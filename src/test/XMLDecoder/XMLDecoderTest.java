@@ -27,13 +27,13 @@ public class XMLDecoderTest {
             if (!file.exists()) {
 
                 file.createNewFile();
-
             }
-            Entity entity = new Entity();
-            OutputStream out = new FileOutputStream(file);
+            ReturnStateInfo entity = new ReturnStateInfo();
+            BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(file));
             XMLEncoder xml = new XMLEncoder(out);
             xml.writeObject(entity);
-            xml.flush();
+//            xml.flush();
+            xml.close();
         }catch (Exception err){
             System.out.println(err.toString());
         }

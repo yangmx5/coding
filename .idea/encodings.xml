@@ -20,5 +20,6 @@
     <file url="file://$PROJECT_DIR$/src/maxadd/RequestTheM.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/Java8Tester.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/baseclass/Java8Tester.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/structs/TestAQS.java" charset="GBK" />
   </component>
 </project>

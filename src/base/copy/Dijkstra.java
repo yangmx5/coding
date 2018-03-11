@@ -1,14 +1,7 @@
-package base;
-
+package base.copy;
 
 public class Dijkstra {
-
-
-
-    /*
-    http://blog.csdn.net/luoshixian099/article/details/51918844
-    */
-    public static void main(String[] args) {
+    public static  void main(String [] args){
 
         char[] vextex = {'A', 'B', 'C', 'D', 'E', 'F'};
         int[][] matrix = new int[6][6];
@@ -43,36 +36,34 @@ public class Dijkstra {
         matrix[3][5] = 15;
         matrix[4][5] = 4;
 
+        int [] dist = matrix[0];
+        boolean [] s = new boolean[dist.length];
+        for(int i = 0 ; i < s.length ; i++){
+            s[i] = false;
+        }
+        s[0] = true;
 
-
-
-        int[] dist = matrix[0];
-        boolean[] s = {true, false, false, false, false, false};//flag the node has been foreach
-
-        for (; ; ) {
-            int min = Integer.MAX_VALUE;
+        while(true){
             int index = -1;
-            for (int i = 0; i < dist.length; i++) {
-                if (!s[i] && dist[i] < min) {
+            int min = Integer.MIN_VALUE;
+            for(int i = 0 ; i < dist.length ; i++){
+                if(!s[i] && dist[i] < min){
+                    index = i ;
                     min = dist[i];
-                    index = i;
                 }
             }
-            if (index == -1) break;
-            for (int j = 0; j < matrix[index].length; j++) {
+            if(index == -1)break;
+            for(int j = 0 ; j < dist.length; j++){
                 if (matrix[index][j] != Integer.MAX_VALUE) {
                     dist[j] = Math.min(matrix[index][j] + min, dist[j]);
                 }
             }
             s[index] = true;
         }
-
         for (int i = 0; i < dist.length; i++) {
             System.out.print(dist[i] + " ");
         }
 
 
     }
-
-
 }

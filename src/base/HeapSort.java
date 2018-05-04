@@ -40,8 +40,9 @@ public class HeapSort {
 	public static void main(String[] args) {
 
 		int[] arr = { 4, 2, 5, 6, 1, 6, 3 };
-		heapSort(arr);
-		System.out.println(Arrays.toString(arr));
+		int [] arr2 = {0,2,1,4,3,9,5,8,6,7};
+		heapSort(arr2);
+		System.out.println(Arrays.toString(arr2));
 
 	}
 }

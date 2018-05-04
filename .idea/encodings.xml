@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/src/Com/Toutiao/Dijkstra.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/Com/wangyi/TheMaxOddNum.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/LeetCode/FindMedianSortedArrays.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/LeetCode/NotRepeatedString.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/LeetCode/UniqueBinarySearchTrees.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/BinarySearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/base/DfsTheTree.java" charset="GBK" />
@@ -16,10 +13,11 @@
     <file url="file://$PROJECT_DIR$/src/base/copy/BinarySearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/forwardoffer/AllPaiLie.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/forwardoffer/DeleteDuplication.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/forwardoffer/RebuildTree.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/forwardoffer/TheMaxAdd.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/maxadd/RequestTheM.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/Java8Tester.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/baseclass/Java8Tester.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/structs/TestAQS.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/singleton/Singleton.java" charset="GBK" />
   </component>
 </project>

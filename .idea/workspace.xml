@@ -2,62 +2,354 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364bf989-cd2f-49a7-af3c-74002abcdad0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/out.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q2.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q6.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Solution.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Solution.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Qunar/FloydInGraph.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Qunar/FloydInGraph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/RenRencopy/line.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/RenRencopy/line.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Dijkstra.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Dijkstra.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/Wanmei/Q1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/Wanmei/Q1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/aLi/Q1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/aLi/Q1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/jingdong/Q2.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/jingdong/Q2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/mi/Q1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/mi/Q1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/threesixzero/Q3.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/threesixzero/Q3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/JumpStone.class" afterPath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/JumpStone.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/InterleavingString.class" afterPath="$PROJECT_DIR$/out/production/Coding/LeetCode/InterleavingString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/RegularExpressionMatches.class" afterPath="$PROJECT_DIR$/out/production/Coding/LeetCode/RegularExpressionMatches.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniqueBinarySearchTrees.class" afterPath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniqueBinarySearchTrees.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniquePaths.class" afterPath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniquePaths.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA.class" afterPath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_CardsInLine.class" afterPath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_CardsInLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_SubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_SubArrayMaxSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_MountainsAndFlames.class" afterPath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_MountainsAndFlames.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_SubMatrixMaxSum.class" afterPath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_SubMatrixMaxSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/base/Dijkstra.class" afterPath="$PROJECT_DIR$/out/production/Coding/base/Dijkstra.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/base/HeapSort.class" afterPath="$PROJECT_DIR$/out/production/Coding/base/HeapSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/Dijkstra.class" afterPath="$PROJECT_DIR$/out/production/Coding/base/copy/Dijkstra.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/RebuildTree.class" afterPath="$PROJECT_DIR$/out/production/Coding/forwardoffer/RebuildTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/CountScore.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/CountScore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/IncrementI$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/IncrementI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/IncrementI.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/IncrementI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/Reflect/ReflectTest.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/Reflect/ReflectTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/XMLDecoderTest.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/XMLDecoderTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/baseclass/IntegerClass.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/baseclass/IntegerClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/DoubleCheckSingleton.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/DoubleCheckSingleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton$Singleton.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton$Singleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$Instance.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$Instance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_6.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_7.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$1.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$2.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$3.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS.class" afterPath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/HeapSort.java" afterPath="$PROJECT_DIR$/src/base/HeapSort.java" />
+      <change afterPath="$PROJECT_DIR$/main/LongestValidParentheses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Haikang/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Haikang/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/JinRi/node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q1_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Q6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Lianjia/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Qunar/FloydInGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Qunar/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Qunar/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/RenRencopy/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/RenRencopy/line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/RenRencopy/node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Renren/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/SouHu/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/SouHu/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Chuan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Toutiao/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Wanmei/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Wanmei/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Xiecheng/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Xiecheng/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/Xiecheng/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/aLi/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/aLi/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/aiqiyi/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/aiqiyi/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/aiqiyi/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/baidu/lianfenshu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/didi/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/didi/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/didi/WQ1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/didi/tes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/jingdong/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/jingdong/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/meituan/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/meituan/Q1Right.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/meituan/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/meituan/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/mi/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/mi/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/mi/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/mogujie/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/mogujie/date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/Q4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/bear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/pinduoduo/yunwei/good.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/sougou/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/sougou/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/sougou/dp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/threesixzero/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/threesixzero/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/threesixzero/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/BackText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/BuyApples.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/CountSugar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/DarkString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/DifferPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/JumpStone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/MagicCountry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/OneselfLive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/QuireNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/RevNumAndCal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/wangyi/TheMaxOddNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/zhubajie/Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/zhubajie/Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Com/zhubajie/Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/DecodeWays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/DistinctSubsequences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/EditDistance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/FindMedianSortedArrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/InterleavingString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/JumpGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/LargestRectangleinHistogram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/LongestPalindromicSubstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/LongestValidParentheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/MaximalRectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/NotRepeatedString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/PolishValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/RegularExpressionMatches.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/ReverseInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/ScrambleString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniqueBinarySearchTrees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/UniquePaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/ZigZagConversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/LeetCode/extra/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_ParenthesesProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_ReverseStackUsingRecursive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA$DisjointSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA$Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA$Tarjan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_02_Islands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_02_LongestSubarrayLessSumAwesomeSolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_02_LongestSumSubArrayLength.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_02_LongestSumSubArrayLengthInPositiveArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_02_SmallSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_CardsInLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_03_SubArrayMaxSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_MountainsAndFlames$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_MountainsAndFlames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/Zuochengyun/Problem_04_SubMatrixMaxSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/DfsTheTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/HeapSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/Josephus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/KMP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/RadixSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/ShellSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/HeapSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/KMP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/base/copy/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/entities/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/AllPaiLie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/DeleteDuplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/Fibonacci.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/FrogJump.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/RebuildTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/ReverseList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/ReverseSentence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/TheMaxAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/forwardoffer/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/maxadd/RequestTheM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/CountScore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/GoldDivide.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/IncrementI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/IncrementI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/RandomNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/Reflect/ReflectTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/Reflect/Tool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/StringTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/TestInherit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/GlobalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/ReturnStateInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/XMLDecoderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/XMLDecoder/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/baseclass/IntegerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/baseclass/ObjectClone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/baseclass/RandomNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/baseclass/TestMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/DoubleCheckSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton$Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/EnumSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/singleton/Singleton_7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestAQS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestArraysCopyOfRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding/test/structs/TestPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Haikang/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Haikang/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/JinRi/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/JinRi/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q1_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Q6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Lianjia/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Qunar/FloydInGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Qunar/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Qunar/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/RenRencopy/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Renren/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Renren/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/SouHu/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/SouHu/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Toutiao/Chuan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Toutiao/Dijkstra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Toutiao/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Toutiao/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Wanmei/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Wanmei/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Xiecheng/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Xiecheng/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/Xiecheng/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/aLi/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/aiqiyi/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/aiqiyi/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/aiqiyi/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/baidu/lianfenshu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/didi/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/didi/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/didi/WQ1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/didi/tes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/jingdong/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/jingdong/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/meituan/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/meituan/Q1Right.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/meituan/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/meituan/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/mi/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/mi/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/mi/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/mogujie/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/yunwei/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/yunwei/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/yunwei/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/pinduoduo/yunwei/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/sougou/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/sougou/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/sougou/dp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/threesixzero/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/threesixzero/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/threesixzero/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/BackText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/BuyApples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/CountSugar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/DarkString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/DifferPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/JumpStone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/MagicCountry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/OneselfLive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/QuireNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/RevNumAndCal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/wangyi/TheMaxOddNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/zhubajie/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/zhubajie/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Com/zhubajie/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/DecodeWays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/DistinctSubsequences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/EditDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/FindMedianSortedArrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/InterleavingString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/JumpGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/LargestRectangleinHistogram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/LongestPalindromicSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/LongestValidParentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/MaximalRectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/NotRepeatedString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/PolishValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/RegularExpressionMatches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/ReverseInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/ScrambleString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/UniqueBinarySearchTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/UniquePaths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/ZigZagConversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/extra/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_01_ParenthesesProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_01_ReverseStackUsingRecursive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_01_TarjanAndDisjointSetsForLCA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_02_Islands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_02_LongestSubarrayLessSumAwesomeSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_02_LongestSumSubArrayLength.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_02_LongestSumSubArrayLengthInPositiveArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_02_SmallSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_03_CardsInLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_03_SubArrayMaxSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_04_MountainsAndFlames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zuochengyun/Problem_04_SubMatrixMaxSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/DfsTheTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/Dijkstra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/Josephus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/KMP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/RadixSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/ShellSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/copy/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/copy/Dijkstra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/copy/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/copy/KMP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/copy/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/AllPaiLie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/DeleteDuplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/Fibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/FrogJump.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/RebuildTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/ReverseList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/ReverseSentence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forwardoffer/TheMaxAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maxadd/RequestTheM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CountScore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GoldDivide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/IncrementI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java8Tester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RandomNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Reflect/ReflectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestInherit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/XMLDecoder/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/XMLDecoder/GlobalInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/XMLDecoder/ReturnStateInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/XMLDecoder/XMLDecoderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/XMLDecoder/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/baseclass/IntegerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/baseclass/Java8Tester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/baseclass/ObjectClone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/baseclass/RandomNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/baseclass/TestMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/singleton/DoubleCheckSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/singleton/EnumSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/singleton/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/structs/TestAQS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/structs/TestArraysCopyOfRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/structs/TestPriorityQueue.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,20 +359,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Coding$LongestValidParentheses.coverage" NAME="LongestValidParentheses Coverage Results" MODIFIED="1563268137409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HeapSort.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java">
+      <file leaf-file-name="LongestValidParentheses.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/LongestValidParentheses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,6 +394,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/base/HeapSort.java" />
+        <option value="$PROJECT_DIR$/main/LongestValidParentheses.py" />
       </list>
     </option>
   </component>
@@ -103,90 +404,39 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="935" />
+    <option name="y" value="1129" />
+    <option name="width" value="1210" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Coding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coding" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +455,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Python.LongestValidParentheses">
     <configuration default="false" name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -226,12 +476,24 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    <configuration name="LongestValidParentheses" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/LongestValidParentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -508,22 +770,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -591,20 +837,11 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -613,17 +850,25 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.HeapSort" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="Python.LongestValidParentheses" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.HeapSort" />
+      <list>
+        <item itemvalue="Python.LongestValidParentheses" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -641,41 +886,42 @@
     <option name="totallyTimeSpent" value="696000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <frame x="935" y="1129" width="1210" height="843" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25375536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4235925" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20462328" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Properties" order="3" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3295583" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -684,34 +930,34 @@
     <breakpoint-manager>
       <option name="time" value="2" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3703">
-          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <folding />
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java">
+    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java" />
+    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="-3703">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/HeapSort.java" />
+    <entry file="file://$PROJECT_DIR$/main/LongestValidParentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,14 @@
+.apis-chart {
+    max-width: 100%;
+    height: 400px;
+}
+.fix-table {
+    max-height: 600px;
+    width: 100%;
+    overflow: auto;
+}
+
+.fix-width-table {
+    width: 100%;
+    overflow: auto;
+}

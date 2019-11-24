@@ -5,5 +5,6 @@ from ancestor.views import index, AncestorViewSet
 
 urlpatterns = [
     url(r'^$', index),
-    url(r'^run/', AncestorViewSet.as_view({'get': 'retrieve'}))
+    url(r'^run/', AncestorViewSet.as_view({'get': 'retrieve'})),
+    url(r'^put/', AncestorViewSet.as_view({'post': 'more'}))
 ]

@@ -12,6 +12,12 @@ def index(request):
 
 
 class AncestorViewSet(viewsets.ViewSet):
+    def __init__(self):
+        self.model = None
+        
     def retrieve(self, request):
         # print(request.GET)
         return Response({"hello": "test"})
+
+    def more(self,request):
+        return Response({"success":True})

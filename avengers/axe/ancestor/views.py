@@ -6,6 +6,8 @@ from django.template.loader import get_template
 from rest_framework.response import Response
 from rest_framework import viewsets
 
+from ancestor.serializers import ResourceCreateSerializer
+
 
 def index(request):
     return render(request, template_name=os.path.join('index.html'))
@@ -14,10 +16,14 @@ def index(request):
 class AncestorViewSet(viewsets.ViewSet):
     def __init__(self):
         self.model = None
-        
+
     def retrieve(self, request):
         # print(request.GET)
         return Response({"hello": "test"})
 
-    def more(self,request):
-        return Response({"success":True})
+    def more(self, request):
+        serializer = ResourceCreateSerializer(data=request.data)
+        if serializer.is_valid():
+            return Response({"success": True})
+        else:
+            return Response({"success": False})

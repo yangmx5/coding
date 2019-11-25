@@ -24,6 +24,8 @@ class AncestorViewSet(viewsets.ViewSet):
     def more(self, request):
         serializer = ResourceCreateSerializer(data=request.data)
         if serializer.is_valid():
+            print("content {}".format(serializer.validated_data.get("web_content")))
+            print("content-data {}".format(serializer.data))
             return Response({"success": True})
         else:
             return Response({"success": False})

@@ -9,6 +9,7 @@ djangorestframework==3.10.2
 fake-useragent==0.1.11
 html2text==2019.8.11
 idna==2.8
+jieba==0.39
 lxml==4.4.1
 parse==1.12.1
 pyee==6.0.0

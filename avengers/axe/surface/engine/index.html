@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Task</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .quarter-div {
+            width: 50%;
+            height: 50%;
+            float: left;
+            overflow: auto;
+        }
+
+        .blue {
+            background-color: #5BC0DE;
+        }
+
+        .green {
+            background-color: #5CB85C;
+        }
+
+        .orange {
+            background-color: #F0AD4E;
+        }
+
+        .yellow {
+            background-color: #FFC706;
+        }
+
+        .gray {
+            background-color: #8D8D8D;
+        }
+
+        .magic {
+            filter: alpha(Opacity=80);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <!-- 表示根据设备的大小调整页面显示的宽度-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--  Bootstrap需要jQuery的支持  导入jQuery开发包-->
+    <script type="text/javascript" src="/surface/common/js/jquery.min.js"></script>
+    <!-- Bootstrap需要的js包-->
+    <script type="text/javascript" src="/surface/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.all.js"></script>
+    <!--Bootstrap需要的CSS样式-->
+    <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/surface/layui/css/layui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main">
+    <div class="quarter-div blue" id="first" style="top:0">
+        <table class="layui-table" lay-skin="row"
+               style="background:#5BC0DE ;border-width:0px;border-style: none;border-color:#e6e6e6">
+            {% if tasks %}
+                {% for item in tasks %}
+                    {% if item.is_important and not item.is_urgent %}
+                        <tr>
+                            <td>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="layui-card" style="">
+                                                <div class="layui-card-body" style="">
+                                                    {{ item.desc }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item">
+                                                <div class="layui-input-block">
+                                                    <select name="city" lay-verify="">
+                                                        <option value="">{{ item.status_display }}</option>
+                                                        <option value="010">UNSTART</option>
+                                                        <option value="021">DOING</option>
+                                                        <option value="0571">DONE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No tasks are available.</p>
+            {% endif %}
+        </table>
+    </div>
+    <div class="quarter-div green">
+        <table class="layui-table" lay-skin="row"
+               style="background:#5CB85C;border-width:0px;border-style: none;border-color:#e6e6e6">
+            {% if tasks %}
+                {% for item in tasks %}
+                    {% if item.is_important and item.is_urgent %}
+                        <tr>
+                            <td>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="layui-card" style="">
+                                                <div class="layui-card-body" style="">
+                                                    {{ item.desc }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item">
+                                                <div class="layui-input-block">
+                                                    <select name="city" lay-verify="">
+                                                        <option value="">{{ item.status_display }}</option>
+                                                        <option value="010">UNSTART</option>
+                                                        <option value="021">DOING</option>
+                                                        <option value="0571">DONE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No tasks are available.</p>
+            {% endif %}
+        </table>
+    </div>
+    <div style="margin:0 auto ; width: 30px;">
+        <a href="/engine/list/">
+            <i class="layui-icon layui-icon-home"></i>
+        </a>
+    </div>
+    <div class="quarter-div orange">
+        <table class="layui-table" lay-skin="row"
+               style="background:#F0AD4E ;border-width:0px;border-style: none;border-color:#e6e6e6">
+            {% if tasks %}
+                {% for item in tasks %}
+                    {% if not item.is_important and not item.is_urgent %}
+                        <tr>
+                            <td>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="layui-card" style="">
+                                                <div class="layui-card-body" style="">
+                                                    {{ item.desc }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item">
+                                                <div class="layui-input-block">
+                                                    <select name="city" lay-verify="">
+                                                        <option value="">{{ item.status_display }}</option>
+                                                        <option value="010">UNSTART</option>
+                                                        <option value="021">DOING</option>
+                                                        <option value="0571">DONE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No tasks are available.</p>
+            {% endif %}
+        </table>
+    </div>
+    <div class="quarter-div yellow">
+        <table class="layui-table" lay-skin="row"
+               style="background:#FFC706 ;border-width:0px;border-style: none;border-color:#e6e6e6">
+            {% if tasks %}
+                {% for item in tasks %}
+                    {% if not item.is_important and item.is_urgent %}
+                        <tr>
+                            <td>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="layui-card" style="">
+                                                <div class="layui-card-body" style="">
+                                                    {{ item.desc }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item">
+                                                <div class="layui-input-block">
+                                                    <select name="city" lay-verify="">
+                                                        <option value="">{{ item.status_display }}</option>
+                                                        <option value="010">UNSTART</option>
+                                                        <option value="021">DOING</option>
+                                                        <option value="0571">DONE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No tasks are available.</p>
+            {% endif %}
+        </table>
+    </div>
+</div>
+<script>
+    layui.use('form', function () {
+        var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
+
+        //……
+
+        //但是，如果你的HTML是动态生成的，自动渲染就会失效
+        //因此你需要在相应的地方，执行下述方法来进行渲染
+        form.render();
+        console.log("render")
+    });
+</script>
+</body>
+</html>

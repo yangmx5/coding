@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from ancestor import urls as ancestor_url
+from engine import urls as engine_url
 
 urlpatterns = [
     url(r'^$', RedirectView.as_view(url='ancestor', permanent=False)),
     url(r'^ancestor/', include(ancestor_url)),
     url(r'^admin/', admin.site.urls),
+    url(r'^engine/', include(engine_url)),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

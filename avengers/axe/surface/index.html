@@ -10,35 +10,65 @@
     <script type="text/javascript" src="/surface/common/js/jquery.min.js"></script>
     <!-- Bootstrap需要的js包-->
     <script type="text/javascript" src="/surface/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.js"></script>
     <!--Bootstrap需要的CSS样式-->
     <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/surface/layui/css/layui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </head>
 
 <body><br><br><br><br><br>
-    <!--bootstrap：搜索框 -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="input-group">
-                    <input id="ancestor" type="text" class="form-control" placeholder="place your url">
-                    <span class="input-group-btn">
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+<!--bootstrap：搜索框 -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input id="ancestor" type="text" class="form-control" placeholder="place your url">
+                <span class="input-group-btn">
                         <!-- <button onclick="window.location.href='run'" class="btn btn-primary">SAVE</button> -->
                         <button onclick="save()" class="btn btn-primary">SAVE</button>
                     </span>
-                </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 <script type="text/javascript">
     function save() {
-        var params = { url: document.getElementById('ancestor'), name: 'tom' };
+        var params = {url: document.getElementById('ancestor'), name: 'tom'};
         var url = $('#ancestor').val()
         console.log(url)
         // url = 'run/?text='+url;
-        url ='run/'
+        url = 'run/'
         $.get(url);
     }
+
+    layui.use(['layer', 'form'], function () {
+        var layer = layui.layer
+            , form = layui.form;
+
+        var msg = layui.device();
+        console.log(msg);
+    });
 </script>
 
 </html>

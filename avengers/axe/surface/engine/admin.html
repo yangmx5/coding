@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Edit</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .half-div {
+            width: 50%;
+            height: 100%;
+            float: left;
+            overflow: auto;
+        }
+
+        .blue {
+            background-color: #5BC0DE;
+        }
+
+        .green {
+            background-color: #5CB85C;
+        }
+
+        .orange {
+            background-color: #F0AD4E;
+        }
+
+        .yellow {
+            background-color: #FFC706;
+        }
+
+        .gray {
+            background-color: #8D8D8D;
+        }
+
+        .magic {
+            filter: alpha(Opacity=80);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <!-- 表示根据设备的大小调整页面显示的宽度-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--  Bootstrap需要jQuery的支持  导入jQuery开发包-->
+    <script type="text/javascript" src="/surface/common/js/jquery.min.js"></script>
+    <!-- Bootstrap需要的js包-->
+    <script type="text/javascript" src="/surface/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.all.js"></script>
+    <!--Bootstrap需要的CSS样式-->
+    <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/surface/layui/css/layui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div class="main">
+    <div style="margin:0 auto ; width: 30px;">
+        <a href="/engine/show/">
+            <i class="layui-icon layui-icon-home"></i>
+        </a>
+    </div>
+    <div class="half-div blue" id="first" style="top:0">
+        <table class="layui-table" lay-skin="row"
+               style="background:#5BC0DE ;border-width:0px;border-style: none;border-color:#e6e6e6">
+            {% if tasks %}
+                {% for item in tasks %}
+                    <tr>
+                        <td onclick="td_onclick({{ item.id }})">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="layui-card" style="">
+                                            <div class="layui-card-body" style="">
+                                                {{ item.desc }}
+                                                <div style="float: right">
+                                                    <a href="">
+                                                        <i class="layui-icon layui-icon-delete"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <p>No tasks are available.</p>
+            {% endif %}
+        </table>
+    </div>
+    <div class="half-div gray">
+        <div style="">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="layui-form" lay-filter="edit-form" action="" id="edit-form">
+
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <input class="layui-hide" type="input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">任务编号</label>
+                                <div class="layui-input-block">
+                                    <input class="layui-input" type="text" name="id" placeholder="不填新增">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">任务简要</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" id="title" required lay-verify="required"
+                                           placeholder="请输入标题"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">状态</label>
+                                <div class="layui-input-block">
+                                    <select class="status" name="status" id="status" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value=0>UNSTART</option>
+                                        <option value=1>DOING</option>
+                                        <option value=2>DONE</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">是否重要</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="is_important" value="true" title="是">
+                                    <input type="radio" name="is_important" value="false" title="否">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">是否紧急</label>
+                                <div class="layui-input-block">
+                                    <input type="radio" name="is_urgent" value="true" title="是">
+                                    <input type="radio" name="is_urgent" value="false" title="否">
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-form-text" style="height: 100%">
+                                <label class="layui-form-label">详细描述</label>
+                                <div class="layui-input-block">
+                                    <textarea name="desc" id="desc" placeholder="请输入内容"
+                                              class="layui-textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
+    layui.use('form', function () {
+        var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
+
+        //……
+
+        //但是，如果你的HTML是动态生成的，自动渲染就会失效
+        //因此你需要在相应的地方，执行下述方法来进行渲染
+        form.render();
+    });
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            console.log(data);
+            $.ajax({
+                type: "post",
+                url: "/engine/edit/",
+                dataType: "json",
+                data: data.field,
+                success: function (msg) {
+                    {#layer.msg(JSON.stringify(msg));#}
+                    console.log(msg);
+                    layer.msg('修改成功');
+                }
+            });
+            $("#edit-form").reset();
+            form.render();
+            return true;
+        });
+    });
+
+    function td_onclick(id) {
+        layer.msg('选中条目' + id);
+        $.ajax({
+            type: "get",  // 请求方式
+            url: "/engine/detail/" + id,  // 目标资源
+            dataType: "json",  // 服务器响应的数据类型
+            success: function (data) {
+                data['ret']['is_important'] = data['ret']['is_important'].toString();
+                data['ret']['is_urgent'] = data['ret']['is_urgent'].toString();
+                var form = layui.form;
+                form.val("edit-form", data['ret']);
+            }
+        })
+    }
+</script>
+</body>
+</html>

@@ -73,12 +73,12 @@
 <div class="main">
     <div style="margin:0 auto ; width: 30px;">
         <a href="/engine/show/">
-            <i class="layui-icon layui-icon-home"></i>
+            <i class="layui-icon layui-icon-home" style="font-size: 25px; color: #300813"></i>
         </a>
     </div>
-    <div class="half-div blue" id="first" style="top:0">
+    <div class="half-div" id="first" style="top:0">
         <table class="layui-table" lay-skin="row"
-               style="background:#5BC0DE ;border-width:0px;border-style: none;border-color:#e6e6e6">
+               style="background-color:unset;border-width:0px;border-style: none;border-color:#e6e6e6">
             {% if tasks %}
                 {% for item in tasks %}
                     <tr>
@@ -90,7 +90,7 @@
                                             <div class="layui-card-body" style="">
                                                 {{ item.desc }}
                                                 <div style="float: right">
-                                                    <a href="">
+                                                    <a href="" onclick="del_task({{ item.id }})">
                                                         <i class="layui-icon layui-icon-delete"></i>
                                                     </a>
                                                 </div>
@@ -107,7 +107,7 @@
             {% endif %}
         </table>
     </div>
-    <div class="half-div gray">
+    <div class="half-div">
         <div style="">
             <div class="container">
                 <div class="row">
@@ -219,7 +219,6 @@
     });
 
     function td_onclick(id) {
-        layer.msg('选中条目' + id);
         $.ajax({
             type: "get",  // 请求方式
             url: "/engine/detail/" + id,  // 目标资源
@@ -229,6 +228,17 @@
                 data['ret']['is_urgent'] = data['ret']['is_urgent'].toString();
                 var form = layui.form;
                 form.val("edit-form", data['ret']);
+            }
+        });
+    }
+
+    function del_task(id) {
+        $.ajax({
+            type: "post",
+            url: "/engine/del/" + id,
+            dataType: "json",
+            success: function (data) {
+                console.log(data)
             }
         })
     }

@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^show/', EngineViewSet.as_view({'get': 'retrieve'})),
     url(r'^list/', EngineViewSet.as_view({'get': 'list_view'})),
     url(r'^edit/', EngineViewSet.as_view({'post': 'edit'})),
+    url(r'^update/', EngineViewSet.as_view({'post': 'update'})),
     path('del/<int:pk>', EngineViewSet.as_view({'post': 'delete'})),
     path('detail/<int:pk>', detail),
     # url(r'^show/', EngineViewSet.as_view()),

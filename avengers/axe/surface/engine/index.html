@@ -67,9 +67,9 @@
     <!--Bootstrap需要的CSS样式-->
     <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
     <link rel="stylesheet" href="/surface/layui/css/layui.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+{#    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"#}
+{#            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"#}
+{#            crossorigin="anonymous"></script>#}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
@@ -89,25 +89,27 @@
                             <td>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-8">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
-                                                    {{ item.desc }}
+                                                    <h3>{{ item.desc }}</h3>
                                                 </div>
                                             </div>
                                         </div>
-                                        <form class="layui-form" action="">
-                                            <div class="layui-form-item">
-                                                <div class="layui-input-block">
-                                                    <select name="city" lay-verify="">
-                                                        <option value="">{{ item.status_display }}</option>
-                                                        <option value="010">UNSTART</option>
-                                                        <option value="021">DOING</option>
-                                                        <option value="0571">DONE</option>
-                                                    </select>
+                                        <div class="col">
+                                            <form class="layui-form" action="">
+                                                <div class="layui-form-item">
+                                                    <div class="layui-input-block" style="margin-left: unset">
+                                                        <select name="status" lay-verify="" item_id="{{ item.id }}">
+                                                            <option value="">{{ item.status_display }}</option>
+                                                            <option value="0">UNSTART</option>
+                                                            <option value="1">DOING</option>
+                                                            <option value="2">DONE</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -129,25 +131,27 @@
                             <td>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-8">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
-                                                    {{ item.desc }}
+                                                    <h3>{{ item.desc }}</h3>
                                                 </div>
                                             </div>
                                         </div>
-                                        <form class="layui-form" action="">
-                                            <div class="layui-form-item">
-                                                <div class="layui-input-block">
-                                                    <select name="city" lay-verify="">
-                                                        <option value="">{{ item.status_display }}</option>
-                                                        <option value="010">UNSTART</option>
-                                                        <option value="021">DOING</option>
-                                                        <option value="0571">DONE</option>
-                                                    </select>
+                                        <div class="col">
+                                            <form class="layui-form" action="">
+                                                <div class="layui-form-item">
+                                                    <div class="layui-input-block" style="margin-left: unset">
+                                                        <select name="status" lay-verify="" item_id="{{ item.id }}">
+                                                            <option value="">{{ item.status_display }}</option>
+                                                            <option value="0">UNSTART</option>
+                                                            <option value="1">DOING</option>
+                                                            <option value="2">DONE</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -174,25 +178,27 @@
                             <td>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-8">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
-                                                    {{ item.desc }}
+                                                    <h3>{{ item.desc }}</h3>
                                                 </div>
                                             </div>
                                         </div>
-                                        <form class="layui-form" action="">
-                                            <div class="layui-form-item">
-                                                <div class="layui-input-block">
-                                                    <select name="city" lay-verify="">
-                                                        <option value="">{{ item.status_display }}</option>
-                                                        <option value="010">UNSTART</option>
-                                                        <option value="021">DOING</option>
-                                                        <option value="0571">DONE</option>
-                                                    </select>
+                                        <div class="col">
+                                            <form class="layui-form" action="">
+                                                <div class="layui-form-item">
+                                                    <div class="layui-input-block" style="margin-left: unset">
+                                                        <select name="status" lay-verify="" item_id="{{ item.id }}">
+                                                            <option value="">{{ item.status_display }}</option>
+                                                            <option value="0">UNSTART</option>
+                                                            <option value="1">DOING</option>
+                                                            <option value="2">DONE</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -214,25 +220,27 @@
                             <td>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-8">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
-                                                    {{ item.desc }}
+                                                    <h3>{{ item.desc }}</h3>
                                                 </div>
                                             </div>
                                         </div>
-                                        <form class="layui-form" action="">
-                                            <div class="layui-form-item">
-                                                <div class="layui-input-block">
-                                                    <select name="city" lay-verify="">
-                                                        <option value="">{{ item.status_display }}</option>
-                                                        <option value="0">UNSTART</option>
-                                                        <option value="1">DOING</option>
-                                                        <option value="2">DONE</option>
-                                                    </select>
+                                        <div class="col">
+                                            <form class="layui-form" action="">
+                                                <div class="layui-form-item">
+                                                    <div class="layui-input-block" style="margin-left: unset">
+                                                        <select name="status" lay-verify="" item_id="{{ item.id }}">
+                                                            <option value="">{{ item.status_display }}</option>
+                                                            <option value="0">UNSTART</option>
+                                                            <option value="1">DOING</option>
+                                                            <option value="2">DONE</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -246,6 +254,7 @@
     </div>
 </div>
 <script>
+    $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
     layui.use('form', function () {
         var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
 
@@ -255,9 +264,19 @@
         //因此你需要在相应的地方，执行下述方法来进行渲染
         form.render();
         form.on('select()', function (data) {
-            console.log(data.elem); //得到select原始DOM对象
-            console.log(data.value); //得到被选中的值
-            console.log(data.othis); //得到美化后的DOM对象
+            {#console.log(data.elem); //得到select原始DOM对象#}
+            {#console.log(data.value); //得到被选中的值#}
+            {#console.log(data.elem.getAttribute('item_id')); //存储的 id#}
+            {#console.log(data.othis); //得到美化后的DOM对象#}
+            $.ajax({
+                type: "post",
+                url: "/engine/update/",
+                dataType: "json",
+                data: {"id": data.elem.getAttribute('item_id'), "status": data.value},
+                success: function (msg) {
+                    layer.msg('修改成功');
+                }
+            });
         });
     });
 </script>

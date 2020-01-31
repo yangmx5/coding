@@ -83,6 +83,20 @@ class EngineViewSet(viewsets.ViewSet):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 
+    def update(self, request):
+        data = request.data
+        if data.get('id') and data.get('status'):
+            try:
+                instance = Task.objects.get(pk=data.get('id'))
+                instance.status = data.get('status')
+                instance.save()
+            except Exception as e:
+                print(e)
+                return JsonResponse({"error": e}, status=500)
+        else:
+            return JsonResponse({"error": "param not valid"}, status=400)
+        return JsonResponse({"success": True}, status=200)
+
     def delete(self, request, pk):
         try:
             instance = Task.objects.get(pk=pk)

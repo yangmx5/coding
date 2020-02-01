@@ -300,10 +300,13 @@
             url: "/engine/detail/" + obj.getAttribute('item_id'),  // 目标资源
             dataType: "json",  // 服务器响应的数据类型
             success: function (data) {
-                layer.msg(JSON.stringify(data['ret']['desc']), {
+                layer.msg('', {
                     id: obj.getAttribute('item_id'),
-                    offset: [event.clientY + 'px', event.clientX + 'px']
+                    offset: [event.clientY + 'px', event.clientX + 'px'],
+                    time: 10 * 1000,
+                    content: "<div style=\"text-align:left\">" + data['ret']['desc'].replace(/\n/g, '</br>') + "</div>",
                 });
+                console.log(data['ret']['desc'].replace(/\n/g, '</br>'));
             }
         });
     }

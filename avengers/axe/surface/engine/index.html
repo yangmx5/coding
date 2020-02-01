@@ -67,9 +67,9 @@
     <!--Bootstrap需要的CSS样式-->
     <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
     <link rel="stylesheet" href="/surface/layui/css/layui.css">
-{#    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"#}
-{#            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"#}
-{#            crossorigin="anonymous"></script>#}
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"#}
+    {#            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"#}
+    {#            crossorigin="anonymous"></script>#}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
@@ -80,16 +80,17 @@
 <body>
 <div class="main bg">
     <div class="quarter-div" id="first" style="top:0">
-        <table class="layui-table" lay-skin="row"
+        <table class="layui-table" lay-skin="row" lay-filter="test"
                style="background-color:unset;border-width:0px;border-style: none;border-color:#e6e6e6">
             {% if tasks %}
                 {% for item in tasks %}
                     {% if item.is_important and item.is_urgent %}
                         <tr>
                             <td>
-                                <div class="container">
+                                <div>
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-8" class="container" onmouseover="card_over(event,this)"
+                                             item_id="{{ item.id }}">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
                                                     <h3>{{ item.title }}</h3>
@@ -129,9 +130,10 @@
                     {% if item.is_important and not item.is_urgent %}
                         <tr>
                             <td>
-                                <div class="container">
+                                <div>
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-8" class="container" onmouseover="card_over(event,this)"
+                                             item_id="{{ item.id }}">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
                                                     <h3>{{ item.title }}</h3>
@@ -176,9 +178,10 @@
                     {% if not item.is_important and item.is_urgent %}
                         <tr>
                             <td>
-                                <div class="container">
+                                <div>
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-8" class="container" onmouseover="card_over(event,this)"
+                                             item_id="{{ item.id }}">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
                                                     <h3>{{ item.title }}</h3>
@@ -218,9 +221,10 @@
                     {% if not item.is_important and not item.is_urgent %}
                         <tr>
                             <td>
-                                <div class="container">
+                                <div>
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-8" class="container" onmouseover="card_over(event,this)"
+                                             item_id="{{ item.id }}">
                                             <div class="layui-card" style="">
                                                 <div class="layui-card-body" style="">
                                                     <h3>{{ item.title }}</h3>
@@ -279,6 +283,35 @@
             });
         });
     });
+
+    /*
+        $('td').mouseover(function (obj) {
+            console.log(obj)
+            console.log("mouseover")
+        }).mouseout(function () {
+            console.log("mouseout")
+            // $(hides).removeClass('a')
+        })*/
+    function card_over(event, obj) {
+        {#console.log(obj);#}
+        {#console.log(event.pageX + ":" + event.pageY);#}
+        $.ajax({
+            type: "get",  // 请求方式
+            url: "/engine/detail/" + obj.getAttribute('item_id'),  // 目标资源
+            dataType: "json",  // 服务器响应的数据类型
+            success: function (data) {
+                layer.msg(JSON.stringify(data['ret']['desc']), {
+                    id: obj.getAttribute('item_id'),
+                    offset: [event.clientY + 'px', event.clientX + 'px']
+                });
+            }
+        });
+    }
+
+    function tr_over_out(id) {
+        layer.close(id)
+    }
+
 </script>
 </body>
 </html>

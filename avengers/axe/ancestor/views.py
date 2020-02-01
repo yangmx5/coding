@@ -3,8 +3,12 @@ import urllib.request
 import html2text
 import os
 
-from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
+from django.shortcuts import render, redirect
 from django.db import transaction
+from django.contrib.auth import authenticate
+from django.contrib.auth import login
 
 from rest_framework.response import Response
 from rest_framework import viewsets
@@ -15,16 +19,29 @@ from ancestor.models import Resource
 
 
 def index(request):
-    return render(request, template_name=os.path.join('index.html'))
+    return render(request, template_name=os.path.join('login.html'))
 
 
 class AncestorViewSet(viewsets.ViewSet):
     queryset = Resource.objects
 
+    authentication_classes = ()
+    permission_classes = ()
+
     def retrieve(self, request):
-        # print(request.GET)
         return Response({"hello": "test"})
 
+    def login(self, request):
+        username = request.data.get('username', '')
+        password = request.data.get('password', '')
+        user = authenticate(username=username, password=password)
+        if user and user.is_active:
+            login(request, user)
+            return redirect('/engine/show/')
+        return JsonResponse({"success": False, "detail": "wrong user or password"}, status=200)
+
+
+class GrabViewSet(viewsets.ViewSet):
     def more(self, request):
         index = request.data.get("index", "")
         web_content = self._get_web_content(index)

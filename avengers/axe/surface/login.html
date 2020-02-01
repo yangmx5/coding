@@ -14,31 +14,51 @@
     <!--Bootstrap需要的CSS样式-->
     <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
     <link rel="stylesheet" href="/surface/layui/css/layui.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <style type="text/css">
+        .login-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -200px;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
 </head>
 
-<body><br><br><br><br><br>
-<!--bootstrap：搜索框 -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="input-group">
-                <input id="ancestor" type="text" class="form-control" placeholder="place your url">
-                <span class="input-group-btn">
-                        <!-- <button onclick="window.location.href='run'" class="btn btn-primary">SAVE</button> -->
-                        <button onclick="save()" class="btn btn-primary">SAVE</button>
-                    </span>
+<body>
+<div class="login-center">
+    <form class="layui-form" action="/ancestor/login/" method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                       autocomplete="off"
+                       class="layui-input">
             </div>
         </div>
-    </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码框</label>
+            <div class="layui-input-inline">
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即登陆</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+        {% csrf_token %}
+    </form>
 </div>
 </body>
 <script type="text/javascript">
@@ -55,8 +75,16 @@
         var layer = layui.layer
             , form = layui.form;
 
-        var msg = layui.device();
-        console.log(msg);
+        {#var msg = layui.device();#}
+        {#console.log(msg);#}
+
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            {#layer.msg(JSON.stringify(data.field));#}
+            return true;
+        });
     });
 </script>
 

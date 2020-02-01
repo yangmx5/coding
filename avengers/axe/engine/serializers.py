@@ -1,6 +1,19 @@
+from django.contrib.auth.models import User
 from rest_framework import serializers
 from engine.models import Task
 from engine.enums import TaskStatus
+
+
+class UserSerialilzers(serializers.Serializer):
+    def create(self, validated_data):
+        pass
+
+    def update(self, instance, validated_data):
+        pass
+
+    class Meta:
+        model = User
+        field = ('id', 'username', 'email')
 
 
 class TaskSerializers(serializers.Serializer):
@@ -10,6 +23,8 @@ class TaskSerializers(serializers.Serializer):
     status = serializers.IntegerField()
     is_important = serializers.BooleanField()
     is_urgent = serializers.BooleanField()
+    user = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='id')
+    active = serializers.BooleanField(default=True)
 
     def create(self, validated_data):
         return Task.objects.create(**validated_data)

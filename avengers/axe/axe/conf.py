@@ -14,3 +14,4 @@ def get_conf():
 
 if __name__ == '__main__':
     print(get_conf())
+    print(os.path.join("/test/", 'test'))

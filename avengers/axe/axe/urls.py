@@ -17,11 +17,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.static import serve
+
 from ancestor import urls as ancestor_url
+from axe import settings
 from engine import urls as engine_url
 
 urlpatterns = [
     url(r'^$', RedirectView.as_view(url='ancestor', permanent=False)),
+    url(r'^surface/(?P<path>.*)$', serve, {'document_root': settings.STATICFILES_DIRS[0]}, name='surface'),
     url(r'^ancestor/', include(ancestor_url)),
     url(r'^admin/', admin.site.urls),
     url(r'^engine/', include(engine_url)),

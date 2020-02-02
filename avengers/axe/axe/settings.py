@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 # 静态资源目录配置
 STATIC_URL = '/surface/'
+# STATIC_ROOT = os.path.join(BASE_DIR, "surface"),
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "surface"),
 ]

@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from axe.conf import get_conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONF = get_conf()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -22,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!onlk$m^u(y&es%_j2nfjuhe_8c@#h*vck*^ir_)$wovf0!uhp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = CONF.get('debug')
 
 ALLOWED_HOSTS = ["*"]
 

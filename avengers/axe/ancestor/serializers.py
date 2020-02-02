@@ -2,7 +2,7 @@
 
 
 from rest_framework import serializers, fields
-from ancestor.models import Resource
+from ancestor.models import Resource, RichResource
 
 
 class ResourceSerializer(serializers.Serializer):
@@ -23,3 +23,14 @@ class ResourceSerializer(serializers.Serializer):
     class Meta:
         model = Resource
         field = ["index", "type", "content"]
+
+
+class RichResourceSerializer(serializers.Serializer):
+    def create(self, validated_data):
+        pass
+
+    def update(self, instance, validated_data):
+        pass
+
+    class Meta:
+        model = RichResource

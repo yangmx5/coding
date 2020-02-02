@@ -4,6 +4,8 @@ from django.db import models
 # Create your models here.
 from django.db import models
 
+from ancestor.models import RichResource
+
 
 class ValideTaskManager(models.Manager):
 
@@ -18,6 +20,7 @@ class Task(models.Model):
     is_important = models.BooleanField()
     is_urgent = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.PROTECT)
+    rich_doc = models.ManyToManyField(RichResource)
     active = models.BooleanField(default=True)
 
     objects = ValideTaskManager()

@@ -1,5 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
+
+from ancestor.models import RichResource
 from engine.models import Task
 from engine.enums import TaskStatus
 

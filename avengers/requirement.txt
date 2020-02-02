@@ -5,6 +5,8 @@ certifi==2019.6.16
 chardet==3.0.4
 cssselect==1.1.0
 Django==2.2.5
+django-ckeditor==5.9.0
+django-js-asset==1.2.2
 djangorestframework==3.10.2
 fake-useragent==0.1.11
 html2text==2019.8.11

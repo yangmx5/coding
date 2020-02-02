@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Axe</title>
+    <meta charset="UTF-8">
+    <!-- 表示根据设备的大小调整页面显示的宽度-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--  Bootstrap需要jQuery的支持  导入jQuery开发包-->
+    <script type="text/javascript" src="/surface/common/js/jquery.min.js"></script>
+    <!-- Bootstrap需要的js包-->
+    <script type="text/javascript" src="/surface/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.js"></script>
+    <script type="text/javascript" src="/surface/layui/layui.all.js"></script>
+    <!--Bootstrap需要的CSS样式-->
+    <link rel="stylesheet" href="/surface/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/surface/layui/css/layui.css">
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"#}
+    {#            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"#}
+    {#            crossorigin="anonymous"></script>#}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="/surface/ckeditor/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+<!--bootstrap：搜索框 -->
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col">
+            <form class="layui-form" action="/ancestor/post_editor/" method="post" onsubmit="return false">
+                <div class="layui-form-item layui-form-text">
+                    <div class="layui-input-block">
+                        <textarea id="editor" name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo" style="float: right">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary layui-hide">重置</button>
+                    </div>
+                </div>
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+    <div class="layui-row layui-hide">
+        <div class="layui-col">
+            <form class="layui-form" onsubmit="return false">
+                <div class="layui-form-item">
+                    <div class="layui-row">
+                        <div class="layui-col-md9">
+                            <input id="ancestor" type="text" class="layui-input" placeholder="place your url">
+                        </div>
+                        <div class="layui-col-md3">
+                            <button class="layui-btn" onclick="save()">SAVE</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-col" id="display">
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
+
+    function save() {
+        var params = {url: document.getElementById('ancestor'), name: 'tom'};
+        var url = $('#ancestor').val();
+        console.log(url);
+        // url = 'run/?text='+url;
+        url = 'run/';
+        $.get(url);
+        return false;
+    }
+
+    layui.use(['form'], function () {
+        var form = layui.form;
+
+        var msg = layui.device();
+        console.log(msg);
+        form.on('submit(formDemo)', function (data) {
+            $.ajax({
+                type: "post",
+                url: "/ancestor/rich_resource/",
+                dataType: "json",
+                data: {'content': CKEDITOR.instances.editor.getData()},
+                success: function (data) {
+                    console.log(data)
+                    layer.msg(CKEDITOR.instances.editor.getData() + "</br>" + JSON.stringify(data));
+                    $.ajax({
+                        type: "get",
+                        url: "/ancestor/rich_resource/",
+                        dataType: "json",
+                        data: {'id': data["id"]},
+                        success: function (ret) {
+                            document.getElementById('display').innerHTML = ret["content"]
+                        }
+                    })
+                }
+            });
+            return false;
+        });
+    });
+    window.onload = function () {
+        CKEDITOR.replace('editor');
+    };
+</script>
+
+</html>

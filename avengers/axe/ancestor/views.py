@@ -15,11 +15,15 @@ from rest_framework import viewsets
 
 from bs4 import BeautifulSoup
 
-from ancestor.models import Resource
+from ancestor.models import Resource, RichResource
 
 
 def index(request):
     return render(request, template_name=os.path.join('login.html'))
+
+
+def editor(request):
+    return render(request, template_name=os.path.join('editor.html'))
 
 
 class AncestorViewSet(viewsets.ViewSet):
@@ -65,3 +69,27 @@ class GrabViewSet(viewsets.ViewSet):
             bs_text = BeautifulSoup(html, features="lxml").get_text().replace('\n', '')
             print("bs_text {}".format(bs_text))
         return text
+
+
+class EditorViewSet(viewsets.ViewSet):
+    authentication_classes = ()
+    permission_classes = ()
+
+    queryset = RichResource
+
+    def create(self, request):
+        content = request.data['content']
+        try:
+            resource = RichResource.objects.create(content=content)
+            resource.save()
+        except Exception as e:
+            print(e)
+            return JsonResponse({'success': False, "info": e})
+        return JsonResponse({'success': True, 'id': resource.id})
+
+    def retieve(self, request):
+        pk = request.GET.get('id')
+        pk = 9
+        content = RichResource.objects.get(pk=pk).content
+
+        return JsonResponse({"content": content})

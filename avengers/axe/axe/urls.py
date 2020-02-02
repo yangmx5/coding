@@ -25,7 +25,9 @@ from engine import urls as engine_url
 
 urlpatterns = [
     url(r'^$', RedirectView.as_view(url='ancestor', permanent=False)),
-    url(r'^surface/(?P<path>.*)$', serve, {'document_root': settings.STATICFILES_DIRS[0]}, name='surface'),
+    url(r'^surface/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}, name='surface'),
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^ancestor/', include(ancestor_url)),
     url(r'^admin/', admin.site.urls),
     url(r'^engine/', include(engine_url)),

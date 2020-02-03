@@ -326,7 +326,8 @@
                     id: obj.getAttribute('item_id'),
                     offset: [event.clientY + 'px', event.clientX + 'px'],
                     time: 10 * 1000,
-                    content: "<div style=\"text-align:left\">" + data['ret']['desc'].replace(/\n/g, '</br>') + "</div>",
+                    {#content: "<div style=\"text-align:left\">" + data['ret']['desc'].replace(/\n/g, '</br>') + "</div>",#}
+                    content: "<div style=\"text-align:left\">" + data['ret']['desc'] + "</div>",
                 });
                 console.log(data['ret']['desc'].replace(/\n/g, '</br>'));
             }

@@ -67,8 +67,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
-
+    <script src="/surface/ckeditor/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <div class="main">
@@ -168,7 +167,6 @@
                                               class="layui-textarea" style="min-height: 300px"></textarea>
                                 </div>
                             </div>
-
                             <div class="layui-form-item">
                                 <div class="layui-input-block">
                                     <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
@@ -184,6 +182,9 @@
     </div>
 </div>
 <script>
+    window.onload = function () {
+        CKEDITOR.replace('desc');
+    };
     $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
     layui.use('form', function () {
         var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
@@ -201,6 +202,7 @@
         //监听提交
         form.on('submit(formDemo)', function (data) {
             layer.msg(JSON.stringify(data.field));
+            data.field['desc'] = CKEDITOR.instances.desc.getData();
             console.log(data);
             $.ajax({
                 type: "post",
@@ -213,7 +215,6 @@
                     layer.msg('修改成功');
                 }
             });
-            $("#edit-form").reset();
             form.render();
             return true;
         });
@@ -229,6 +230,7 @@
                 data['ret']['is_urgent'] = data['ret']['is_urgent'].toString();
                 var form = layui.form;
                 form.val("edit-form", data['ret']);
+                CKEDITOR.instances.desc.setData(data['ret']['desc'])
             }
         });
     }

@@ -22,6 +22,7 @@ def index(request):
     return render(request, template_name=os.path.join('login.html'))
 
 
+@login_required(login_url='/')
 def editor(request):
     return render(request, template_name=os.path.join('editor.html'))
 
@@ -72,9 +73,6 @@ class GrabViewSet(viewsets.ViewSet):
 
 
 class EditorViewSet(viewsets.ViewSet):
-    authentication_classes = ()
-    permission_classes = ()
-
     queryset = RichResource
 
     def create(self, request):

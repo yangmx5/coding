@@ -6,6 +6,7 @@ import os
 import json
 
 from django.contrib.auth.decorators import login_required
+from django.core.serializers import serialize
 from django.http import JsonResponse, Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.db import transaction
@@ -35,10 +36,12 @@ def detail(request, pk):
     try:
         instance = Task.objects.get(pk=pk, user=request.user)
         ret = TaskSerializers(instance).data
+        # rich_docs = json.loads(serialize('json', instance.rich_doc.all()))
+        rich_docs = []
     except Exception as e:
         print(e)
         return JsonResponse({"success": False, "detail": e.__str__()}, status=200)
-    return JsonResponse({"success": True, "ret": ret}, status=200)
+    return JsonResponse({"success": True, "ret": ret, "rich_docs": rich_docs}, status=200)
 
 
 @login_required(login_url='/')

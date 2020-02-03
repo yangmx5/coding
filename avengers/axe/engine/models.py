@@ -5,6 +5,7 @@ from django.db import models
 from django.db import models
 
 from ancestor.models import RichResource
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class ValideTaskManager(models.Manager):
@@ -15,12 +16,12 @@ class ValideTaskManager(models.Manager):
 
 class Task(models.Model):
     title = models.CharField(max_length=255, blank=False)
-    desc = models.CharField(max_length=255, blank=True)
+    desc = RichTextUploadingField()
     status = models.IntegerField(blank=False, default=0)
     is_important = models.BooleanField()
     is_urgent = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.PROTECT)
-    rich_doc = models.ManyToManyField(RichResource)
+    # rich_doc = models.ManyToManyField(RichResource)
     active = models.BooleanField(default=True)
 
     objects = ValideTaskManager()

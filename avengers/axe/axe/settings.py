@@ -15,7 +15,7 @@ from axe.conf import get_conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, "/surface/")
+STATIC_ROOT = os.path.join(BASE_DIR, "surface")
 CONF = get_conf()
 
 # Quick-start development settings - unsuitable for production
@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/surface/'
 # STATIC_ROOT = os.path.join(BASE_DIR, "surface"),
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "surface"),
+    os.path.join(BASE_DIR, "/surface/"),
 ]
 CKEDITOR_BASEPATH = "/surface/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"

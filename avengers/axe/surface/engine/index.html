@@ -90,9 +90,8 @@
                             <td>
                                 <div>
                                     <div class="row">
-                                        <div class="col-lg-8 container" onmouseover="card_over(event,this)"
-                                             item_id="{{ item.id }}">
-                                            <div class="layui-card" style="">
+                                        <div class="col-lg-8 container">
+                                            <div class="layui-card" style="" onclick="card_over(event,this)" item_id="{{ item.id }}">
                                                 <div class="layui-card-body {% if item.status == 0 %}layui-bg-gray{% elif item.status == 1 %}layui-bg-cyan{% elif item.status == 2 %}layui-bg-green{% else %}{% endif %}"
                                                      style=""
                                                      id="card_body_{{ item.id }}">
@@ -107,9 +106,9 @@
                                                         <select name="status" lay-verify=""
                                                                 item_id="{{ item.id }}">
                                                             <option value="">{{ item.status_display }}</option>
-                                                            <option value="0">UNSTART</option>
-                                                            <option value="1">DOING</option>
-                                                            <option value="2">DONE</option>
+                                                            <option value="0">未开始</option>
+                                                            <option value="1">正在做</option>
+                                                            <option value="2">已完成</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -132,13 +131,12 @@
             {% if tasks %}
                 {% for item in tasks %}
                     {% if item.is_important and not item.is_urgent %}
-                        <tr>
+                         <tr>
                             <td>
                                 <div>
                                     <div class="row">
-                                        <div class="col-lg-8 container" onmouseover="card_over(event,this)"
-                                             item_id="{{ item.id }}">
-                                            <div class="layui-card" style="">
+                                        <div class="col-lg-8 container">
+                                            <div class="layui-card" style="" onclick="card_over(event,this)" item_id="{{ item.id }}">
                                                 <div class="layui-card-body {% if item.status == 0 %}layui-bg-gray{% elif item.status == 1 %}layui-bg-cyan{% elif item.status == 2 %}layui-bg-green{% else %}{% endif %}"
                                                      style=""
                                                      id="card_body_{{ item.id }}">
@@ -153,9 +151,9 @@
                                                         <select name="status" lay-verify=""
                                                                 item_id="{{ item.id }}">
                                                             <option value="">{{ item.status_display }}</option>
-                                                            <option value="0">UNSTART</option>
-                                                            <option value="1">DOING</option>
-                                                            <option value="2">DONE</option>
+                                                            <option value="0">未开始</option>
+                                                            <option value="1">正在做</option>
+                                                            <option value="2">已完成</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -183,13 +181,12 @@
             {% if tasks %}
                 {% for item in tasks %}
                     {% if not item.is_important and item.is_urgent %}
-                        <tr>
+                         <tr>
                             <td>
                                 <div>
                                     <div class="row">
-                                        <div class="col-lg-8 container" onmouseover="card_over(event,this)"
-                                             item_id="{{ item.id }}">
-                                            <div class="layui-card" style="">
+                                        <div class="col-lg-8 container">
+                                            <div class="layui-card" style="" onclick="card_over(event,this)" item_id="{{ item.id }}">
                                                 <div class="layui-card-body {% if item.status == 0 %}layui-bg-gray{% elif item.status == 1 %}layui-bg-cyan{% elif item.status == 2 %}layui-bg-green{% else %}{% endif %}"
                                                      style=""
                                                      id="card_body_{{ item.id }}">
@@ -204,9 +201,9 @@
                                                         <select name="status" lay-verify=""
                                                                 item_id="{{ item.id }}">
                                                             <option value="">{{ item.status_display }}</option>
-                                                            <option value="0">UNSTART</option>
-                                                            <option value="1">DOING</option>
-                                                            <option value="2">DONE</option>
+                                                            <option value="0">未开始</option>
+                                                            <option value="1">正在做</option>
+                                                            <option value="2">已完成</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -233,9 +230,8 @@
                             <td>
                                 <div>
                                     <div class="row">
-                                        <div class="col-lg-8 container" onmouseover="card_over(event,this)"
-                                             item_id="{{ item.id }}">
-                                            <div class="layui-card" style="">
+                                        <div class="col-lg-8 container">
+                                            <div class="layui-card" style="" onclick="card_over(event,this)" item_id="{{ item.id }}">
                                                 <div class="layui-card-body {% if item.status == 0 %}layui-bg-gray{% elif item.status == 1 %}layui-bg-cyan{% elif item.status == 2 %}layui-bg-green{% else %}{% endif %}"
                                                      style=""
                                                      id="card_body_{{ item.id }}">
@@ -250,9 +246,9 @@
                                                         <select name="status" lay-verify=""
                                                                 item_id="{{ item.id }}">
                                                             <option value="">{{ item.status_display }}</option>
-                                                            <option value="0">UNSTART</option>
-                                                            <option value="1">DOING</option>
-                                                            <option value="2">DONE</option>
+                                                            <option value="0">未开始</option>
+                                                            <option value="1">正在做</option>
+                                                            <option value="2">已完成</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -325,9 +321,11 @@
                 layer.msg('', {
                     id: obj.getAttribute('item_id'),
                     offset: [event.clientY + 'px', event.clientX + 'px'],
-                    time: 10 * 1000,
+                    time: 0,
                     {#content: "<div style=\"text-align:left\">" + data['ret']['desc'].replace(/\n/g, '</br>') + "</div>",#}
                     content: "<div style=\"text-align:left\">" + data['ret']['desc'] + "</div>",
+                    shade:0.3,
+                    shadeClose:true
                 });
                 console.log(data['ret']['desc'].replace(/\n/g, '</br>'));
             }

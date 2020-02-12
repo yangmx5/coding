@@ -121,13 +121,13 @@
                             </div>
 
                             <div class="layui-form-item">
-                                <label class="layui-form-label">任务编号</label>
+                                <label class="layui-form-label" style="width: unset">任务编号</label>
                                 <div class="layui-input-block">
                                     <input class="layui-input" type="text" name="id" placeholder="不填新增">
                                 </div>
                             </div>
                             <div class="layui-form-item">
-                                <label class="layui-form-label">任务简要</label>
+                                <label class="layui-form-label" style="width: unset">任务简要</label>
                                 <div class="layui-input-block">
                                     <input type="text" name="title" id="title" required lay-verify="required"
                                            placeholder="请输入标题"
@@ -136,32 +136,32 @@
                             </div>
 
                             <div class="layui-form-item">
-                                <label class="layui-form-label">状态</label>
+                                <label class="layui-form-label" style="width: unset">状态</label>
                                 <div class="layui-input-block">
                                     <select class="status" name="status" id="status" lay-verify="required">
                                         <option value=""></option>
-                                        <option value=0>UNSTART</option>
-                                        <option value=1>DOING</option>
-                                        <option value=2>DONE</option>
+                                        <option value=0>未开始</option>
+                                        <option value=1>正在做</option>
+                                        <option value=2>已完成</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="layui-form-item">
-                                <label class="layui-form-label">是否重要</label>
+                                <label class="layui-form-label" style="width: unset">是否重要</label>
                                 <div class="layui-input-block">
                                     <input type="radio" name="is_important" value="true" title="是">
                                     <input type="radio" name="is_important" value="false" title="否">
                                 </div>
                             </div>
                             <div class="layui-form-item">
-                                <label class="layui-form-label">是否紧急</label>
+                                <label class="layui-form-label" style="width: unset">是否紧急</label>
                                 <div class="layui-input-block">
                                     <input type="radio" name="is_urgent" value="true" title="是">
                                     <input type="radio" name="is_urgent" value="false" title="否">
                                 </div>
                             </div>
                             <div class="layui-form-item layui-form-text">
-                                <label class="layui-form-label">详细描述</label>
+                                <label class="layui-form-label" style="width: unset">详细描述</label>
                                 <div class="layui-input-block">
                                     <textarea name="desc" id="desc" placeholder="请输入内容"
                                               class="layui-textarea" style="min-height: 300px"></textarea>

@@ -320,7 +320,7 @@
             success: function (data) {
                 layer.msg('', {
                     id: obj.getAttribute('item_id'),
-                    offset: [event.clientY + 'px', event.clientX + 'px'],
+                    {#offset: [event.clientY + 'px', event.clientX + 'px'],#}
                     time: 0,
                     {#content: "<div style=\"text-align:left\">" + data['ret']['desc'].replace(/\n/g, '</br>') + "</div>",#}
                     content: "<div style=\"text-align:left\">" + data['ret']['desc'] + "</div>",

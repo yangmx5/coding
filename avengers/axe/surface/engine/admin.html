@@ -90,7 +90,7 @@
                                             <div class="layui-card-body" style="">
                                                 {{ item.title }}
                                                 <div style="float: right">
-                                                    <a href="" onclick="del_task({{ item.id }})">
+                                                    <a href="javascript:del_task({{ item.id }})">
                                                         <i class="layui-icon layui-icon-delete"></i>
                                                     </a>
                                                 </div>
@@ -201,9 +201,9 @@
 
         //监听提交
         form.on('submit(formDemo)', function (data) {
-            layer.msg(JSON.stringify(data.field));
+            {#layer.msg(JSON.stringify(data.field));#}
             data.field['desc'] = CKEDITOR.instances.desc.getData();
-            console.log(data);
+            {#console.log(data);#}
             $.ajax({
                 type: "post",
                 url: "/engine/edit/",
@@ -211,7 +211,7 @@
                 data: data.field,
                 success: function (msg) {
                     {#layer.msg(JSON.stringify(msg));#}
-                    console.log(msg);
+                    {#console.log(msg);#}
                     layer.msg('修改成功');
                 }
             });
@@ -236,14 +236,26 @@
     }
 
     function del_task(id) {
-        $.ajax({
-            type: "post",
-            url: "/engine/del/" + id,
-            dataType: "json",
-            success: function (data) {
-                console.log(data)
+        layer.msg('是否确认删除', {
+            skin: 'demo-class',
+            time: 20000, //20s后自动关闭
+            btn: ['确认', '取消'],
+            shade:0.3,
+            shadeClose:true,
+            yes: function (index, layero) {
+                $.ajax({
+                    type: "post",
+                    url: "/engine/del/" + id,
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data)
+                    }
+                });
+                layer.msg("删除成功")
             }
-        })
+        });
+
+
     }
 </script>
 </body>

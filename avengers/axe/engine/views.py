@@ -1,4 +1,5 @@
 # Create your views here.
+import datetime
 import ssl
 import urllib.request
 import html2text
@@ -54,6 +55,7 @@ def retrieve(request):
             item['status_display'] = TaskStatus(item.get('status', 0)).name
             ret.append(dict(item))
     context = {"tasks": ret}
+    print(ret)
     template = loader.get_template(os.path.join('engine/index.html'))
     return HttpResponse(template.render(context, request))
 
@@ -80,6 +82,12 @@ class EngineViewSet(viewsets.ViewSet):
     def edit(self, request):
         data = request.data.dict()
         data['user'] = request.user.id
+
+        date = datetime.datetime.strptime(data['plan_time'], '%Y-%m-%d').date()
+        date_time = datetime.datetime.combine(date, datetime.time(0, 0, 0))
+        data['plan_time'] = str(date_time)
+        print(data['plan_time'])
+
         if data.get('id'):
             try:
                 instance = Task.objects.get(pk=data.get('id'), user=request.user)

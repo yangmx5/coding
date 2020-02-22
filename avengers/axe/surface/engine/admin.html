@@ -160,6 +160,12 @@
                                     <input type="radio" name="is_urgent" value="false" title="否">
                                 </div>
                             </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" style="width:unset">预期完成</label>
+                                <div class="layui-input-block">
+                                    <input type="text" class="layui-input" id="plan_time" placeholder="yyyy-MM-dd">
+                                </div>
+                            </div>
                             <div class="layui-form-item layui-form-text">
                                 <label class="layui-form-label" style="width: unset">详细描述</label>
                                 <div class="layui-input-block">
@@ -196,13 +202,16 @@
         form.render();
     });
     //Demo
-    layui.use('form', function () {
+    layui.use(['form', 'laydate'], function () {
         var form = layui.form;
+        var laydate = layui.laydate;
 
         //监听提交
         form.on('submit(formDemo)', function (data) {
             {#layer.msg(JSON.stringify(data.field));#}
             data.field['desc'] = CKEDITOR.instances.desc.getData();
+            data.field['plan_time'] = document.getElementById("plan_time").value;
+            {#console.log(document.getElementById("plan_time").value);#}
             {#console.log(data);#}
             $.ajax({
                 type: "post",
@@ -218,6 +227,12 @@
             form.render();
             return true;
         });
+
+        //墨绿主题
+        laydate.render({
+            elem: '#plan_time'
+            , theme: 'molv'
+        });
     });
 
     function td_onclick(id) {
@@ -231,6 +246,11 @@
                 var form = layui.form;
                 form.val("edit-form", data['ret']);
                 CKEDITOR.instances.desc.setData(data['ret']['desc'])
+                var laydate = layui.laydate;
+                laydate.render({
+                    elem: '#plan_time'
+                    , value: new Date(Date.parse(data['ret']['plan_time'].replace(/-/g, "/"))) //参数即为：2018-08-20 20:08:08 的时间戳
+                });
             }
         });
     }
@@ -240,8 +260,8 @@
             skin: 'demo-class',
             time: 20000, //20s后自动关闭
             btn: ['确认', '取消'],
-            shade:0.3,
-            shadeClose:true,
+            shade: 0.3,
+            shadeClose: true,
             yes: function (index, layero) {
                 $.ajax({
                     type: "post",

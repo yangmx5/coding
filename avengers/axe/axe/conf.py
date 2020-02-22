@@ -5,6 +5,7 @@ import yaml
 def get_conf():
     env = os.environ.get('AXE_ENV', 'LOCAL')
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    print("RUN ON {}".format(env))
     file_name = "conf/axe.{}.yml".format(env.lower())
     conf_path = os.path.join(path, file_name)
     with open(conf_path, 'r') as conf:

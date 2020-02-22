@@ -27,6 +27,10 @@ class TaskSerializers(serializers.Serializer):
     is_urgent = serializers.BooleanField()
     user = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='id')
     active = serializers.BooleanField(default=True)
+    finished_time = serializers.DateTimeField(default=True)
+    plan_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S')
+    modified_time = serializers.DateTimeField(default=True)
+    created_time = serializers.DateTimeField(default=True)
 
     def create(self, validated_data):
         return Task.objects.create(**validated_data)
@@ -37,11 +41,15 @@ class TaskSerializers(serializers.Serializer):
         instance.status = TaskStatus(validated_data.get('status', instance.status)).value
         instance.is_important = validated_data.get('is_important', instance.is_important)
         instance.is_urgent = validated_data.get('is_urgent', instance.is_urgent)
+        instance.plan_time = validated_data.get('plan_time', instance.plan_time)
         instance.save()
         return instance
 
     def to_representation(self, instance):
         if False:
             instance.status = TaskStatus(instance.status).name
+
+        instance.finished_time = instance.finished_time.strftime("%Y-%m-%d")
+        instance.plan_time = instance.plan_time.strftime("%Y-%m-%d")
 
         return super(TaskSerializers, self).to_representation(instance)

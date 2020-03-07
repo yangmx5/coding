@@ -71,11 +71,7 @@
 </head>
 <body>
 <div class="main">
-    <div style="margin:0 auto ; width: 30px;">
-        <a href="/engine/show/">
-            <i class="layui-icon layui-icon-home" style="font-size: 25px; color: #300813"></i>
-        </a>
-    </div>
+
     <div class="half-div" id="first" style="top:0">
         <table class="layui-table" lay-skin="row"
                style="background-color:unset;border-width:0px;border-style: none;border-color:#e6e6e6">
@@ -107,19 +103,12 @@
             {% endif %}
         </table>
     </div>
-    <div class="half-div">
+    <div class="half-div" style="height: 97%">
         <div style="">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="layui-form" lay-filter="edit-form" action="" id="edit-form">
-
-                            <div class="layui-form-item">
-                                <div class="layui-input-block">
-                                    <input class="layui-hide" type="input">
-                                </div>
-                            </div>
-
                             <div class="layui-form-item">
                                 <label class="layui-form-label" style="width: unset">任务编号</label>
                                 <div class="layui-input-block">
@@ -185,6 +174,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div>
+<span class="layui-breadcrumb" style="visibility:unset;font-size: unset; float:right">
+  <a href="/engine">日历视图</a>
+  <a href="/engine/show/">四象限</a>
+  <a href="/engine/list/">编辑</a>
+</span>
     </div>
 </div>
 <script>

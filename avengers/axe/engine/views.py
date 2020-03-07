@@ -29,7 +29,7 @@ from engine.serializers import TaskSerializers, UserSerialilzers
 
 @login_required(login_url='/')
 def index(request):
-    return render(request, template_name=os.path.join('engine/index.html'))
+    return render(request, template_name=os.path.join('engine/calendar.html'))
 
 
 @login_required(login_url='/')
@@ -125,3 +125,14 @@ class EngineViewSet(viewsets.ViewSet):
             print(e)
             return JsonResponse({"success": False, "detail": e.__str__()}, status=200)
         return JsonResponse({"success": True}, status=200)
+
+    def all_user_task(self, request):
+        tasks = Task.objects.filter(user=request.user)
+        tmp = TaskSerializers(tasks, many=True).data
+        ret = []
+        if tmp:
+            for item in tmp:
+                item['status_display'] = TaskStatus(item.get('status', 0)).name
+                ret.append(dict(item))
+        context = {"tasks": ret}
+        return HttpResponse(JsonResponse(context))

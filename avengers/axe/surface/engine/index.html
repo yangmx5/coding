@@ -188,11 +188,7 @@
             {% endif %}
         </table>
     </div>
-    <div style="margin:0 auto ; width: 30px; color: #3F3F3F">
-        <a href="/engine/list/">
-            <i class="layui-icon layui-icon-home" style="font-size: 25px; color: #300813"></i>
-        </a>
-    </div>
+
     <div class="quarter-div">
         <table class="layui-table" lay-skin="row"
                style="background-color:unset;border-width:0px;border-style: none;border-color:#e6e6e6">
@@ -247,7 +243,7 @@
             {% endif %}
         </table>
     </div>
-    <div class="quarter-div">
+    <div class="quarter-div" style="height: 47%">
         <table class="layui-table" lay-skin="row"
                style="background-color:unset;border-width:0px;border-style: none;border-color:#e6e6e6">
             {% if tasks %}
@@ -301,7 +297,16 @@
             {% endif %}
         </table>
     </div>
+<div>
+            <span class="layui-breadcrumb" style="visibility:unset;font-size: unset; float:right">
+            <a href="/engine">日历视图</a>
+            <a href="/engine/show/">四象限</a>
+                <a href="/engine/list/">编辑</a>
+            </span>
+        </div>
+
 </div>
+
 <script>
     $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}});
     layui.use(['form', 'laydate'], function () {

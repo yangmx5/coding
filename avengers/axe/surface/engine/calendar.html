@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>日程视图</title>
+    <link rel="stylesheet" href="/surface/layui/css/layui.css">
+    <link rel="stylesheet" href="css/date.css">
+    <link id="layuicss-layer" rel="stylesheet"
+          href="https://www.jsdaima.com/Uploads/js/201806/1528099789/layui/css/modules/layer/default/layer.css?v=3.1.1"
+          media="all">
+    <link id="layuicss-laydate" rel="stylesheet"
+          href="https://www.jsdaima.com/Uploads/js/201806/1528099789/layui/css/modules/laydate/default/laydate.css?v=5.0.9"
+          media="all">
+    <link rel="stylesheet prefetch" href="/surface/common/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/surface/common/css/style.css">
+    <style>
+
+        #test-n2 {
+            position: relative;
+            min-height: 400px !important;
+            width: 100% !important;
+        }
+
+        #test-n2 #layui-laydate1, #test-n2 #layui-laydate1 .layui-laydate-main, #test-n2 .layui-laydate-content table {
+            width: 100%;
+        }
+
+        #test-n2 .layui-laydate-content table tbody {
+            height: calc(100vh - 240px) !important;
+        }
+
+        #test-n2 .layui-laydate-content td {
+            height: 125px !important;
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        #test-n2 .laydate-day-mark {
+            font-weight: bold;
+            font-size: unset;
+            height: 125px;
+            overflow: scroll;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #test-n2 .laydate-set-ym {
+            font-weight: bold;
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        .text_box {
+            padding: 15px !important;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+<div class="layui-inline" id="test-n2" lay-key="1"></div>
+
+<script src="/surface/layui/layui.js"></script>
+<script type="text/javascript" src="/surface/common/js/jquery.min.js"></script>
+<script>
+    layui.use(['layer', 'form', 'jquery', 'laydate'], function () {
+        var layer = layui.layer,
+            $ = layui.jquery,
+            laydate = layui.laydate,
+            form = layui.form;
+
+
+        //定义json
+        {#var data = add_all_tasks();#}
+        {#console.log(JSON.stringify(data));#}
+
+        var new_date = new Date();
+        {#loding_date(new_date, data);#}
+        add_all_tasks();
+
+
+        //日历插件调用方法
+        function loding_date(date_value, data) {
+
+            laydate.render({
+                elem: '#test-n2'
+                , type: 'date'
+                , theme: 'grid'
+                , max: '2099-06-16 23:59:59'
+                , position: 'static'
+                , range: false
+                , value: date_value
+                , calendar: true
+                , btns: false
+                , done: function (value, date, endDate) {
+                    {#console.log(value); //得到日期生成的值，如：2017-08-18#}
+                    {#console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}#}
+                    {#console.log(endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。#}
+                    //layer.msg(value)
+
+                    //调用弹出层方法
+                    date_chose(value, data);
+
+                }
+                , mark: data//重要json！,
+                , showBottom: false
+
+            });
+        }
+
+
+        //获取隐藏的弹出层内容
+        var date_choebox = $('.date_box').html();
+
+        //定义弹出层方法
+        function date_chose(obj_date, data) {
+            var index = layer.open({
+                type: 1,
+                skin: 'layui-layer-rim', //加上边框
+                area: ['400px', 'auto'], //宽高
+                btn: ['确定', '清空', '取消'],
+                title: false, //不显示标题栏
+                closeBtn: false,
+                shade: 0.8,
+                shadeClose: true,
+                id: 'LAY_layuipro',//设定一个id，防止重复弹出
+                btnAlign: 'r',
+                moveType: 1,//拖拽模式，0或者1
+                content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">' + (data[obj_date] ? data[obj_date] : "暂无") + '</div>'
+                , success: function () {
+                    $('#text_book').html(data[obj_date])
+                }
+                , yes: function () {
+                    //调用添加/编辑标注方法
+                    if ($('#text_book').html() != '') {
+                        chose_moban(obj_date, data);
+                        layer.close(index);
+                    } else {
+                        layer.msg('不能为空', {icon: 2});
+                    }
+
+                }, btn2: function () {
+                    chexiao(obj_date, data);
+                }
+            });
+        }
+
+
+        //定义添加/编辑标注方法
+        function chose_moban(obj_date, markJson) {
+            //获取弹出层val
+            var chose_moban_val = $('#text_book').html();
+
+            $('#test-n2').html('');//重要！由于插件是嵌套指定容器，再次调用前需要清空原日历控件
+            //添加属性
+            markJson[obj_date] = chose_moban_val;
+
+            //再次调用日历控件，
+            console.log("actual" + JSON.stringify(markJson) + obj_date);
+            loding_date(obj_date, markJson);//重要！，再标注一个日期后会刷新当前日期变为初始值，所以必须调用当前选定日期。
+
+        }
+
+
+        //撤销选择
+        function chexiao(obj_date, markJson) {
+            //删除指定日期标注
+            delete markJson[obj_date];
+            //原理同添加一致
+            $('#test-n2').html('');
+            loding_date(obj_date, markJson);
+
+        }
+
+        function add_all_tasks() {
+            $.ajax({
+                type: "get",  // 请求方式
+                url: "/engine/all_tasks/",  // 目标资源
+                dataType: "json",  // 服务器响应的数据类型
+                success: function (data) {
+                    markJson = {};
+                    for (item of data["tasks"]) {
+                        if (markJson[item["plan_time"]] != null) {
+                            markJson[item["plan_time"]] = markJson[item["plan_time"]] + "</br>" + item["title"];
+                        } else {
+                            markJson[item["plan_time"]] = item["title"];
+                        }
+                        console.log(JSON.stringify(markJson));
+                        console.log(item["plan_time"]);
+                    }
+                    loding_date(new Date(), markJson);
+                }
+            });
+        }
+
+
+    });
+
+
+    function loding_date(markJson) {
+
+    }
+
+    add_all_tasks();
+</script>
+
+<script type="text/javascript" src="/surface/common/js/toggle.js"></script>
+
+
+<div class="layui-layer-move"></div>
+
+<div>
+<span class="layui-breadcrumb" style="visibility:unset;font-size: unset; float:right">
+  <a href="/engine">日历视图</a>
+  <a href="/engine/show/">四象限</a>
+  <a href="/engine/list/">编辑</a>
+</span>
+</div>
+
+</body>
+</html>

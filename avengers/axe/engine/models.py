@@ -23,7 +23,7 @@ class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT)
     # rich_doc = models.ManyToManyField(RichResource)
     active = models.BooleanField(default=True)
-    finished_time = models.DateTimeField(blank=True)
+    finished_time = models.DateTimeField(blank=True, auto_now=True)
     plan_time = models.DateTimeField(blank=True)
     modified_time = models.DateTimeField('修改时间', auto_now=True)
     created_time = models.DateTimeField('创建时间', auto_now_add=True)

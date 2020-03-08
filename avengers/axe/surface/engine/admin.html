@@ -83,7 +83,8 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="layui-card" style="">
-                                            <div class="layui-card-body" style="">
+                                            <div class="layui-card-body layui-card-body {% if item.status == 0 %}layui-bg-gray{% elif item.status == 1 %}layui-bg-cyan{% elif item.status == 2 %}layui-bg-green{% else %}{% endif %}"
+                                                 style="">
                                                 {{ item.title }}
                                                 <div style="float: right">
                                                     <a href="javascript:del_task({{ item.id }})">

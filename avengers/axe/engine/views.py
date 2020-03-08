@@ -53,7 +53,8 @@ def retrieve(request):
     if tmp:
         for item in tmp:
             item['status_display'] = TaskStatus(item.get('status', 0)).name
-            ret.append(dict(item))
+            if not TaskStatus(item.get('status', 0)).value == 2:
+                ret.append(dict(item))
     context = {"tasks": ret}
     print(ret)
     template = loader.get_template(os.path.join('engine/index.html'))

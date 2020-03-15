@@ -25,11 +25,30 @@ from ancestor.models import Resource
 from engine.enums import TaskStatus
 from engine.models import Task
 from engine.serializers import TaskSerializers, UserSerialilzers
+from datetime import datetime,timedelta,time
 
 
 @login_required(login_url='/')
 def index(request):
     return render(request, template_name=os.path.join('engine/calendar.html'))
+
+
+@login_required(login_url='/')
+def daily_work(request):
+    today = datetime.now().date()
+    tomorrow = today + timedelta(1)
+    today_start = datetime.combine(today, time())
+    today_end = datetime.combine(tomorrow, time())
+    tasks = Task.objects.filter(user=request.user, plan_time__gte=today_start, plan_time__lte=today_end)
+    tmp = TaskSerializers(tasks, many=True).data
+    ret = []
+    if tmp:
+        for item in tmp:
+            item['status_display'] = TaskStatus(item.get('status', 0)).name
+            ret.append(dict(item))
+    context = {"tasks": ret}
+    template = loader.get_template(os.path.join('engine/daily_work.html'))
+    return HttpResponse(template.render(context, request))
 
 
 @login_required(login_url='/')
@@ -56,7 +75,6 @@ def retrieve(request):
             if not TaskStatus(item.get('status', 0)).value == 2:
                 ret.append(dict(item))
     context = {"tasks": ret}
-    print(ret)
     template = loader.get_template(os.path.join('engine/index.html'))
     return HttpResponse(template.render(context, request))
 
@@ -87,7 +105,6 @@ class EngineViewSet(viewsets.ViewSet):
         date = datetime.datetime.strptime(data['plan_time'], '%Y-%m-%d').date()
         date_time = datetime.datetime.combine(date, datetime.time(0, 0, 0))
         data['plan_time'] = str(date_time)
-        print(data['plan_time'])
 
         if data.get('id'):
             try:

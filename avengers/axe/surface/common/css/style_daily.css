@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(fonts/zn7gbfwfmp4ua6ar0hcolq.ttf) format('truetype');
+}
+body{
+	font-family:'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+	/*background: linear-gradient(to left, #c0c0aa , #1ce);*/
+}
+
+h1 {
+	background: #009688;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+  border-radius: 5px 5px 0 0;
+}
+
+h1 i {
+	float: right;
+	cursor: pointer;
+}
+
+#container {
+	width: 70%;
+	/*margin: 100px auto;*/
+    margin: 20% auto;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  /*border-radius: 0 0px 8px rgba(0,0,0,0.2);*/
+  /*border-radius: 5px 5px 0 0;*/
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#container li {
+	cursor: pointer;
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+#container li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: #ccc !important;
+}
+
+input {
+	font-size: 18px;
+  font-family:'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 10px 10px 10px 16px;
+	box-sizing: border-box;
+	color: #5bc0de;
+	border: 2px solid rgba(0,0,0,0.05);
+	
+}
+
+.slide {
+	display: none;
+}
+
+input:focus{
+	background: white;
+	outline: none;
+	border: 2px solid #009688;
+}
+
+li span {
+	background: #e74c3c;
+	color: white;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+	width: 0;
+	transition: all .5s;
+	text-align: center;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}

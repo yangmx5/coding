@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.urls import path
 from django.views.generic import RedirectView
 
-from engine.views import index, detail, retrieve, list_view, daily_work
+from engine.views import index, detail, retrieve, list_view, daily_work, TaskItemViewSet
 from engine.views import EngineViewSet
 
 urlpatterns = [
@@ -16,3 +16,8 @@ urlpatterns = [
     path('del/<int:pk>', EngineViewSet.as_view({'post': 'delete'})),
     path('detail/<int:pk>', detail),
 ]
+
+# Task item apis
+urlpatterns.extend([
+    url(r'^td_items/', TaskItemViewSet.as_view({'get': 'items_of_today'})),
+])

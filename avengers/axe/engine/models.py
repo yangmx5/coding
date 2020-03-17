@@ -25,10 +25,29 @@ class Task(models.Model):
     active = models.BooleanField(default=True)
     finished_time = models.DateTimeField(blank=True, auto_now=True)
     plan_time = models.DateTimeField(blank=True)
+    plan_start_time = models.DateTimeField(blank=True)
+    plan_end_time = models.DateTimeField(blank=True)
+    modified_time = models.DateTimeField('修改时间', auto_now=True)
+    created_time = models.DateTimeField('创建时间', auto_now_add=True)
+    task_type = models.SmallIntegerField()
+
+    objects = ValideTaskManager()
+
+    class Meta:
+        db_table = "engine_task"
+
+
+class TaskItem(models.Model):
+    content = models.CharField(max_length=255, blank=False)
+    status = models.IntegerField(blank=False, default=0)
+    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+    active = models.BooleanField(default=True)
+    finished_time = models.DateTimeField(blank=True, auto_now=True)
+    plan_time = models.DateTimeField(blank=True)
     modified_time = models.DateTimeField('修改时间', auto_now=True)
     created_time = models.DateTimeField('创建时间', auto_now_add=True)
 
     objects = ValideTaskManager()
 
     class Meta:
-        db_table = "engine_task"
+        db_table = "engine_task_item"

@@ -23,9 +23,9 @@ from bs4 import BeautifulSoup
 
 from ancestor.models import Resource
 from engine.enums import TaskStatus
-from engine.models import Task
-from engine.serializers import TaskSerializers, UserSerialilzers
-from datetime import datetime,timedelta,time
+from engine.models import Task, TaskItem
+from engine.serializers import TaskSerializers, UserSerialilzers, TaskItemSerializers
+from datetime import datetime, timedelta, time
 
 
 @login_required(login_url='/')
@@ -35,11 +35,7 @@ def index(request):
 
 @login_required(login_url='/')
 def daily_work(request):
-    today = datetime.now().date()
-    tomorrow = today + timedelta(1)
-    today_start = datetime.combine(today, time())
-    today_end = datetime.combine(tomorrow, time())
-    tasks = Task.objects.filter(user=request.user, plan_time__gte=today_start, plan_time__lte=today_end)
+    tasks = Task.objects.filter(user=request.user, plan_time__gte=get_today()[0], plan_time__lte=get_today()[1])
     tmp = TaskSerializers(tasks, many=True).data
     ret = []
     if tmp:
@@ -94,7 +90,7 @@ def list_view(request):
 
 
 class EngineViewSet(viewsets.ViewSet):
-    queryset = Resource.objects
+    queryset = Task.objects
     permission_classes = (IsAuthenticated,)
     authentication_classes = (SessionAuthentication,)
 
@@ -154,3 +150,23 @@ class EngineViewSet(viewsets.ViewSet):
                 ret.append(dict(item))
         context = {"tasks": ret}
         return HttpResponse(JsonResponse(context))
+
+
+class TaskItemViewSet(viewsets.ViewSet):
+    queryset = TaskItem.objects
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (SessionAuthentication,)
+
+    def items_of_today(self, request):
+        user = request.user
+        items = TaskItem.objects.filter(task__user=user, plan_time__lte=get_today()[1], plan_time__gte=get_today()[0])
+        ret = TaskItemSerializers(items, many=True).data
+        return HttpResponse(JsonResponse(ret, safe=False))
+
+
+def get_today():
+    today = datetime.now().date()
+    tomorrow = today + timedelta(1)
+    today_start = datetime.combine(today, time())
+    today_end = datetime.combine(tomorrow, time())
+    return today_start, today_end

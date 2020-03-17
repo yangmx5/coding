@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 
 from ancestor.models import RichResource
-from engine.models import Task
+from engine.models import Task, TaskItem
 from engine.enums import TaskStatus
 
 
@@ -52,3 +52,23 @@ class TaskSerializers(serializers.Serializer):
             instance.plan_time = instance.plan_time.strftime("%Y-%m-%d")
 
         return super(TaskSerializers, self).to_representation(instance)
+
+
+class TaskItemSerializers(serializers.Serializer):
+    def create(self, validated_data):
+        pass
+
+    def update(self, instance, validated_data):
+        pass
+
+    id = serializers.IntegerField(read_only=True)
+    content = serializers.CharField()
+    status = serializers.IntegerField()
+    task = serializers.SlugRelatedField(queryset=Task.objects.all(), slug_field='id')
+    active = serializers.BooleanField(default=True)
+    plan_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S')
+    finished_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S')
+
+    class Meta:
+        model = TaskItem
+        field = ('id', 'content', 'status', 'task', 'plan_time', 'finished_time')

@@ -5,16 +5,16 @@ public class Java8Tester {
 	   public static void main(String args[]){
 	      Java8Tester tester = new Java8Tester();
 	        
-	      // ÀàÐÍÉùÃ÷
+	      // ç±»åž‹å£°æ˜Ž
 	      MathOperation addition = (int a, int b) -> a + b;
 	        
-	      // ²»ÓÃÀàÐÍÉùÃ÷
+	      // ä¸ç”¨ç±»åž‹å£°æ˜Ž
 	      MathOperation subtraction = (a, b) -> a - b;
 	        
-	      // ´óÀ¨ºÅÖÐµÄ·µ»ØÓï¾ä
+	      // å¤§æ‹¬å·ä¸­çš„è¿”å›žè¯­å¥
 	      MathOperation multiplication = (int a, int b) -> {  return a * b;};
 	        
-	      // Ã»ÓÐ´óÀ¨ºÅ¼°·µ»ØÓï¾ä
+	      // æ²¡æœ‰å¤§æ‹¬å·åŠè¿”å›žè¯­å¥
 	      MathOperation division = (int a, int b) -> a / b;
 	      
 	      int a = 10 ; 
@@ -25,11 +25,11 @@ public class Java8Tester {
 	      System.out.println("10 x 5 = " + tester.operate(10, 5, multiplication));
 	      System.out.println("10 / 5 = " + tester.operate(10, 5, division));
 	        
-	      // ²»ÓÃÀ¨ºÅ
+	      // ä¸ç”¨æ‹¬å·
 	      GreetingService greetService1 = message ->
 	      System.out.println("Hello " + message);
 	        
-	      // ÓÃÀ¨ºÅ
+	      // ç”¨æ‹¬å·
 	      GreetingService greetService2 = (message) ->
 	      System.out.println("Hello " + message);
 	        

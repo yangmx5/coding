@@ -11,7 +11,7 @@ import entities.ListNode;
 
 
 /*
- * É¾³ıÁ´±íÖĞÖØ¸´ÔªËØ
+ * åˆ é™¤é“¾è¡¨ä¸­é‡å¤å…ƒç´ 
  * 
  */
 public class DeleteDuplication {

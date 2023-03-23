@@ -2,7 +2,7 @@ package LeetCode;
 
 
 /*
- * 最长的有效括号
+ * 鏈�闀跨殑鏈夋晥鎷彿
  */
 public class LongestValidParentheses {
 	//AC

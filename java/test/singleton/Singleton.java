@@ -1,6 +1,6 @@
 package test.singleton;
 
-//ÀÁººÏß³Ì²»°²È«
+//æ‡’æ±‰çº¿ç¨‹ä¸å®‰å…¨
 public class Singleton {
 
 	private static Singleton instance;
@@ -17,7 +17,7 @@ public class Singleton {
 
 }
 
-// ÀÁººÏß³Ì°²È«
+// æ‡’æ±‰çº¿ç¨‹å®‰å…¨
 class Singleton_2 {
 
 	private static Singleton_2 instance;
@@ -34,7 +34,7 @@ class Singleton_2 {
 
 }
 
-// ¶öºº
+// é¥¿æ±‰
 class Singleton_3 {
 
 	private static Singleton_3 instance = new Singleton_3();
@@ -47,7 +47,7 @@ class Singleton_3 {
 	}
 }
 
-// ¶öºº±äÖÖ
+// é¥¿æ±‰å˜ç§
 class Singleton_4 {
 
 	private static Singleton_4 instance = null;
@@ -63,7 +63,7 @@ class Singleton_4 {
 	}
 }
 
-// ¾²Ì¬ÄÚ²¿Àà
+// é™æ€å†…éƒ¨ç±»
 class Singleton_5 {
 	private static class Instance {
 		private static final Singleton_5 INSTANCE = new Singleton_5();
@@ -77,7 +77,7 @@ class Singleton_5 {
 	}
 }
 
-// Ã¶¾Ù
+// æšä¸¾
 enum Singleton_6 {
 	INSTANSE;
 	private String name;
@@ -91,7 +91,7 @@ enum Singleton_6 {
 	}
 }
 
-// Ë«ÖØĞ£ÑéËø
+// åŒé‡æ ¡éªŒé”
 class Singleton_7 {
 	private volatile static Singleton_7 instance;
 

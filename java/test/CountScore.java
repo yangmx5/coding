@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-//´ò°Ğ¼ÆËã·ÖÊı£¬²Î¿¼leetcode µÄ burstBallon
+//æ‰“é¶è®¡ç®—åˆ†æ•°ï¼Œå‚è€ƒleetcode çš„ burstBallon
 public class CountScore {
 
 	public void test() {

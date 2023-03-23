@@ -9,24 +9,24 @@ import LeetCode.extra.TreeNode;
 public class DfsTheTree {
 
 	/*
-	 * ·Çµİ¹éÊµÏÖ £¨1£©Õ»S³õÊ¼»¯£»visited[n]=0£» £¨2£©·ÃÎÊ¶¥µãv£»visited[v]=1£»¶¥µãvÈëÕ»S
+	 * éé€’å½’å®ç° ï¼ˆ1ï¼‰æ ˆSåˆå§‹åŒ–ï¼›visited[n]=0ï¼› ï¼ˆ2ï¼‰è®¿é—®é¡¶ç‚¹vï¼›visited[v]=1ï¼›é¡¶ç‚¹vå…¥æ ˆS
 	 * 
-	 * £¨3£©while(Õ»S·Ç¿Õ)
+	 * ï¼ˆ3ï¼‰while(æ ˆSéç©º)
 	 * 
-	 * x=Õ»SµÄ¶¥ÔªËØ(²»³öÕ»)£»
+	 * x=æ ˆSçš„é¡¶å…ƒç´ (ä¸å‡ºæ ˆ)ï¼›
 	 * 
-	 * if(ÕÒµ½´æÔÚ²¢Î´±»·ÃÎÊµÄxµÄÁÚ½Óµãw)
+	 * if(æ‰¾åˆ°å­˜åœ¨å¹¶æœªè¢«è®¿é—®çš„xçš„é‚»æ¥ç‚¹w)
 	 * 
-	 * ·ÃÎÊw£»visited[w]=1£»
+	 * è®¿é—®wï¼›visited[w]=1ï¼›
 	 * 
-	 * w½øÕ»;
+	 * wè¿›æ ˆ;
 	 * 
 	 * else
 	 * 
-	 * x³öÕ»£»
+	 * xå‡ºæ ˆï¼›
 	 * 
 	 */
-	// Dfs±éÀú¶ş²æÊ÷ ÏÈÑ¹Õ»èÖ×ÓÊ÷ È»ºó×ó×ÓÊ÷
+	// Dfséå†äºŒå‰æ ‘ å…ˆå‹æ ˆæŸšå­æ ‘ ç„¶åå·¦å­æ ‘
 	public List<TreeNode> Dfs_tree(TreeNode root) {
 		Stack<TreeNode> sta = new Stack<>();
 		List<TreeNode> res = new ArrayList<>();

@@ -17,11 +17,11 @@ public class HeapSort {
 		arr[s] = rc; 
 	}
 
-	// ¶ÑÅÅĞò
+	// å †æ’åº
 	public static void heapSort(int[] items) {
 		int t, i;
 		for (i = items.length / 2 - 1; i >= 0; i--) {
-			heapAdjust(items, i, items.length);// ´´½¨´ó¶¥¶Ñ
+			heapAdjust(items, i, items.length);// åˆ›å»ºå¤§é¡¶å †
 			for(int j = 0 ; j < items.length;j++)
 				System.out.print(items[j]+ " ");
 			System.out.println("");
@@ -29,7 +29,7 @@ public class HeapSort {
 		for (i = items.length - 1; i > 0; i--) {
 			t = items[0];
 			items[0] = items[i];
-			items[i] = t; // ½»»»
+			items[i] = t; // äº¤æ¢
 			heapAdjust(items, 0, i);
 			for(int j = 0 ; j < items.length;j++)
 				System.out.print(items[j]+ " ");

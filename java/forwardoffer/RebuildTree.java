@@ -13,7 +13,7 @@ class TreeNode {
 }
 
 /*
- * 根据前序遍历 和中序遍历重建二叉树
+ * 鏍规嵁鍓嶅簭閬嶅巻 鍜屼腑搴忛亶鍘嗛噸寤轰簩鍙夋爲
  */
 public class RebuildTree {
 

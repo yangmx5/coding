@@ -4,8 +4,8 @@ public class Q2 {
 
 	
 	/*
-	 * String大数乘积
-	 * 支持正负
+	 * String澶ф暟涔樼Н
+	 * 鏀寔姝ｈ礋
 	 */
 	
 	public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class Q2 {
 
 	
 	public static String mul(String str1,String str2){
-		//符号判断处理
+		//绗﹀彿鍒ゆ柇澶勭悊
 		int judge = 0;
 		if(str1.charAt(0) == '-' || str2.charAt(0) == '-'){
 			

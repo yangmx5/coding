@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 public class Test {
 
 	public static void main(String[] args) {
-		String str = "SUN公司被Oracle收购，是否意味着java被逼上了死路？MY.AST_Parser12";
+		String str = "SUN鍏徃琚玂racle鏀惰喘锛屾槸鍚︽剰鍛崇潃java琚�间笂浜嗘璺紵MY.AST_Parser12";
 		String s = "\\d+.\\d+|\\w+";
 		Pattern pattern = Pattern.compile(s);
 		Matcher ma = pattern.matcher(str);

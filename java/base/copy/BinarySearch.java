@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BinarySearch {
 	
-	//二分查找递归方法
+	//浜屽垎鏌ユ壘閫掑綊鏂规硶
 	public static int BinarySearchInRecurise(int [] arr , int start , int end,int num){
 		
 		if(start <= end){

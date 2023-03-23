@@ -6,7 +6,7 @@ import java.util.List;
 public class FloydInGraph {
 
 	/**
-	 * Í¼ ÁÚ½Ó¾ØÕó ×î¶ÌÂ·¾¶ ¸¥ÂåÒÁµÂËã·¨
+	 * å›¾ é‚»æ¥çŸ©é˜µ æœ€çŸ­è·¯å¾„ å¼—æ´›ä¼Šå¾·ç®—æ³•
 	 */
 	private static int INF = Integer.MAX_VALUE;
 	// dist[i][j]=INF<==>no edges between i and j

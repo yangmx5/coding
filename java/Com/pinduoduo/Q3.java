@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Q3 {
 
 	/*
-	 * 老师分巧克力w[i]>h[i] 第i个小朋友表演
-	 * 尽可能多的小朋友表演
+	 * 鑰佸笀鍒嗗阀鍏嬪姏w[i]>h[i] 绗琲涓皬鏈嬪弸琛ㄦ紨
+	 * 灏藉彲鑳藉鐨勫皬鏈嬪弸琛ㄦ紨
 	 * 
 	 */
 	public static void main(String[] args) {

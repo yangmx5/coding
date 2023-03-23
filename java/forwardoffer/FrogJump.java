@@ -3,10 +3,10 @@ package forwardoffer;
 public class FrogJump {
 
 	/*
-	 * ÇàÍÜÌøÌ¨½×ÎÊÌâ:
-	 * ÇàÍÜ¿ÉÒÔÌøÈÎÒâ¸ßµÄÌ¨½×£¬ÇóÇàÍÜÌøÉÏÒ»¸ön¼¶µÄÌ¨½××Ü¹²ÓÐ¶àÉÙÖÖÌø·¨
-	 * Ã¿¸öÌ¨½×ÇàÍÜ¿ÉÒÔÑ¡ÔñÌø»ò²»Ìø£¨×îºóÒ»¸öÌ¨½×±ØÐëÌø£©
-	 * ËùÒÔ2^(n-1)ÖÖÌø·¨
+	 * é’è›™è·³å°é˜¶é—®é¢˜:
+	 * é’è›™å¯ä»¥è·³ä»»æ„é«˜çš„å°é˜¶ï¼Œæ±‚é’è›™è·³ä¸Šä¸€ä¸ªnçº§çš„å°é˜¶æ€»å…±æœ‰å¤šå°‘ç§è·³æ³•
+	 * æ¯ä¸ªå°é˜¶é’è›™å¯ä»¥é€‰æ‹©è·³æˆ–ä¸è·³ï¼ˆæœ€åŽä¸€ä¸ªå°é˜¶å¿…é¡»è·³ï¼‰
+	 * æ‰€ä»¥2^(n-1)ç§è·³æ³•
 	 * 
 	 */
 	public int  JumpFloorInRecursion(int target){

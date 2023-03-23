@@ -4,7 +4,7 @@ import java.util.Random;
 
 
 /*
- * Éú³ÉËæ»úÊı
+ * ç”Ÿæˆéšæœºæ•°
  */
 public class RandomNum {
 
@@ -16,10 +16,10 @@ public class RandomNum {
 
 		while (min-- > 0) {
 			// int s = random.nextInt(max) % (max - min + 1) + min;
-			//randomÀà»ñÈ¡Ëæ»úÊı
+			//randomç±»è·å–éšæœºæ•°
 			int s = random.nextInt(max);
 			
-			//MathÀà»ñÈ¡0-1Ö®¼äµÄËæ»úÊıdoubleÀàĞÍ
+			//Mathç±»è·å–0-1ä¹‹é—´çš„éšæœºæ•°doubleç±»å‹
 			double l = Math.random();
 			//int n = (int) ((l*10)%(max - min + 1) + min);
 			int n = (int) (l*10);

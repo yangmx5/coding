@@ -1,7 +1,7 @@
 package test.singleton;
 
 
-//volatile ºÍ synchronized Ë«ÖØËøĞ£Ñé
+//volatile å’Œ synchronized åŒé‡é”æ ¡éªŒ
 public class DoubleCheckSingleton {
 
 	private volatile static DoubleCheckSingleton singleton;

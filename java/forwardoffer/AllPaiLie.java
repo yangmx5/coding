@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /*
- * È«ÅÅÁĞ
- * ¡°abc¡± µÄÈ«ÅÅÁĞĞÎÊ½
+ * å…¨æ’åˆ—
+ * â€œabcâ€ çš„å…¨æ’åˆ—å½¢å¼
  * 
  */
 public class AllPaiLie {

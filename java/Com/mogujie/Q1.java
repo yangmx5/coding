@@ -23,7 +23,7 @@ public class Q1 {
 	    } 
 	    sum=sum+date.day; 
 	    if((date.year%4==0&&date.year%100!=0)||(date.year%400==0)) 
-	        sum++; //ÅĞ¶ÏÊÇ·ñÊÇÈòÄê
+	        sum++; //åˆ¤æ–­æ˜¯å¦æ˜¯é—°å¹´
 	    return sum; 
 	} 
 	 

@@ -15,7 +15,7 @@ public class Q3 {
 		System.out.println(getTheLength(a));
 	}
 	
-	//遍历解法
+	//閬嶅巻瑙ｆ硶
 	public static int getTheLength(int [] a){
 		
 		int length = 1;
@@ -29,7 +29,7 @@ public class Q3 {
 		return length;
 	}
 	
-	//交错序列dp解法
+	//浜ら敊搴忓垪dp瑙ｆ硶
 	public static int getTheLengthInDP(int [] a){
 		int sum = 1;
 		int len = a.length;

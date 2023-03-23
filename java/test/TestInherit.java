@@ -14,7 +14,7 @@ class Person {
 		return "Person";
 	}
 }
-//super()º¯Êı±ØĞë·ÅÔÚ×ÓÀà¹¹Ôìº¯ÊıµÄµÚÒ»ĞĞ
+//super()å‡½æ•°å¿…é¡»æ”¾åœ¨å­ç±»æ„é€ å‡½æ•°çš„ç¬¬ä¸€è¡Œ
 class Teacher extends Person {
 	public int id = 1;
 	
@@ -33,13 +33,13 @@ public class TestInherit {
 	public static void main(String[] args) {
 
 		
-		// ²âÊÔ¸¸Àà×ÓÀà¹¹Ôìº¯Êı¹ØÏµºÍÖØÔØ¹ØÏµ
+		// æµ‹è¯•çˆ¶ç±»å­ç±»æ„é€ å‡½æ•°å…³ç³»å’Œé‡è½½å…³ç³»
 		Person person = new Person();
 		Person teacher = new Teacher();
 //		System.out.println(person.getName());
 //		System.out.println(teacher.getName());
 
-		// ²âÊÔÊı×éÖĞÔªËØÊÇ·ñ¿ÉÒÔÎªnull ,(ÒıÓÃÀàĞÍ¿ÉÒÔÎª¿Õ£¬»ù±¾ÀàĞÍ²»¿ÉÒÔ)
+		// æµ‹è¯•æ•°ç»„ä¸­å…ƒç´ æ˜¯å¦å¯ä»¥ä¸ºnull ,(å¼•ç”¨ç±»å‹å¯ä»¥ä¸ºç©ºï¼ŒåŸºæœ¬ç±»å‹ä¸å¯ä»¥)
 		Person[] a = { person, teacher };// new Person[2];
 		a[1] = null;
 //		System.out.println(Arrays.toString(a));

@@ -7,17 +7,17 @@ public class Q2 {
 
 	/*
 	 *
-KµÄ±¶Êý
-sum[i] ±íÊ¾Ç°iÏîºÍ£¬sum[i]%=kºó£¬ÕÒsum[i] ÔÚ×ó±ß³öÏÖ¹ýÃ»ÓÐ£¬³öÏÖ¹ýµÄ×î×óµÄÎ»ÖÃ£¬¾ÍÊÇ×îÔ¶µÄ¾àÀë
+Kçš„å€æ•°
+sum[i] è¡¨ç¤ºå‰ié¡¹å’Œï¼Œsum[i]%=kåŽï¼Œæ‰¾sum[i] åœ¨å·¦è¾¹å‡ºçŽ°è¿‡æ²¡æœ‰ï¼Œå‡ºçŽ°è¿‡çš„æœ€å·¦çš„ä½ç½®ï¼Œå°±æ˜¯æœ€è¿œçš„è·ç¦»
 
 
 
-¸ÄÊÔ¾í£º
-Ì°ÐÄ£º
-Ê×ÏÈµÚÒ»¸ö±ØÑ¡ ×î´óÊý£¡·ñÔò¿Ï¶¨ÖÐ¼ä»á²»¹»ÓÃ¡£
+æ”¹è¯•å·ï¼š
+è´ªå¿ƒï¼š
+é¦–å…ˆç¬¬ä¸€ä¸ªå¿…é€‰ æœ€å¤§æ•°ï¼å¦åˆ™è‚¯å®šä¸­é—´ä¼šä¸å¤Ÿç”¨ã€‚
 
-Èç¹û×î´óÊý³¬¹ýÒ»¸ö£¬yes£¬ÒòÎª£¬¿ÉÒÔ°´ÕÕ´Ó×î´óµ½×îÐ¡ÒÀ´Î·ÃÎÊ
-Èç¹û×î´óÊýÖ»ÓÐÒ»¸ö£¬Ð¡ÓÚ×î´óÊýµÄÊýµÄºÍ´óÓÚµÈÓÚ×î´óÊý£¬yes£¬·ñÔò no
+å¦‚æžœæœ€å¤§æ•°è¶…è¿‡ä¸€ä¸ªï¼Œyesï¼Œå› ä¸ºï¼Œå¯ä»¥æŒ‰ç…§ä»Žæœ€å¤§åˆ°æœ€å°ä¾æ¬¡è®¿é—®
+å¦‚æžœæœ€å¤§æ•°åªæœ‰ä¸€ä¸ªï¼Œå°äºŽæœ€å¤§æ•°çš„æ•°çš„å’Œå¤§äºŽç­‰äºŽæœ€å¤§æ•°ï¼Œyesï¼Œå¦åˆ™ no
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

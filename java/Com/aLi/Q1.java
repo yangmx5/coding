@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Q1 {
 
-	/** 请完成下面这个process函数，实现题目要求的功能 **/
-	/** 当然，你也可以不按照这个模板来作答，完全按照自己的想法来 ^-^ **/
+	/** 璇峰畬鎴愪笅闈㈣繖涓猵rocess鍑芥暟锛屽疄鐜伴鐩姹傜殑鍔熻兘 **/
+	/** 褰撶劧锛屼綘涔熷彲浠ヤ笉鎸夌収杩欎釜妯℃澘鏉ヤ綔绛旓紝瀹屽叏鎸夌収鑷繁鐨勬兂娉曟潵 ^-^ **/
 
 	private static Model boxTemplate = new Model();
 

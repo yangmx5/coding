@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * n ³¤Êı×éÄÚ  k Çø¼äÖĞ×îĞ¡Öµ³ËÇø¼äºÍµÄ×î´óÖµ
+ * n é•¿æ•°ç»„å†…  k åŒºé—´ä¸­æœ€å°å€¼ä¹˜åŒºé—´å’Œçš„æœ€å¤§å€¼
  * 
- * dp[i][j] := ÏÂ±êÎªiµÄj³¤Çø¼äÄÚµÄ×îĞ¡Öµ
+ * dp[i][j] := ä¸‹æ ‡ä¸ºiçš„jé•¿åŒºé—´å†…çš„æœ€å°å€¼
  * dp[i][j] = min{dp[i][j-1] , arr[i+j-1]}
  * 
- * result[i] := ÏÂ±êÎªi¿ªÊ¼µÄÇø¼äÄÚ×î´ó»ı
+ * result[i] := ä¸‹æ ‡ä¸ºiå¼€å§‹çš„åŒºé—´å†…æœ€å¤§ç§¯
  * result[i] = max(dp[i][j]*sum(arr,i,i+j-1))
  *   
  */
@@ -62,7 +62,7 @@ public class Q2 {
 			}
 		}
 		
-		//´òÓ¡dp
+		//æ‰“å°dp
 		for(int i = 0 ; i < dp.length ; i ++){
 			for(int j = 0 ; j <dp[0].length ; j++)
 				System.out.print(dp[i][j] + " ");
@@ -79,7 +79,7 @@ public class Q2 {
 			}
 		}
 		
-		//´òÓ¡result
+		//æ‰“å°result
 		for(int i = 0 ; i< result.length ;i++){
 			System.out.print(result[i] +" ");
 		} 

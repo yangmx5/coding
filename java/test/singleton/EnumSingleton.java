@@ -2,7 +2,7 @@ package test.singleton;
 
 public class EnumSingleton {
 
-	//ö�ٵĵ���ģʽ
+	//枚举的单例模式
 	
 	public enum Singleton{
 		INSTANSE;

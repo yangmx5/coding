@@ -25,13 +25,13 @@ public class Problem_01_TarjanAndDisjointSetsForLCA {
 		}
 	}
 
-	// Ö÷º¯Êı
+	// ä¸»å‡½æ•°
 	public static Node[] tarJanQuery(Node head, Query[] quries) {
 		Node[] ans = new Tarjan().query(head, quries);
 		return ans;
 	}
 
-	// TarjanËã·¨ÊµÏÖ´¦ÀíÁ÷³Ì
+	// Tarjanç®—æ³•å®ç°å¤„ç†æµç¨‹
 	public static class Tarjan {
 		private HashMap<Node, LinkedList<Node>> queryMap;
 		private HashMap<Node, LinkedList<Integer>> indexMap;
@@ -105,7 +105,7 @@ public class Problem_01_TarjanAndDisjointSetsForLCA {
 
 	}
 
-	// ÊµÏÖTarjanÀàÖĞÊ¹ÓÃµÄ²¢²é¼¯½á¹¹
+	// å®ç°Tarjanç±»ä¸­ä½¿ç”¨çš„å¹¶æŸ¥é›†ç»“æ„
 	public static class DisjointSets {
 		public HashMap<Node, Node> fatherMap;
 		public HashMap<Node, Integer> rankMap;
@@ -204,7 +204,7 @@ public class Problem_01_TarjanAndDisjointSetsForLCA {
 		printTree(head);
 		System.out.println("===============");
 
-		// Éú³É²éÑ¯Êı×é
+		// ç”ŸæˆæŸ¥è¯¢æ•°ç»„
 		Query[] qs = new Query[7];
 		qs[0] = new Query(head.left.right, head.right.left);
 		qs[1] = new Query(head.left.left, head.left);
@@ -214,10 +214,10 @@ public class Problem_01_TarjanAndDisjointSetsForLCA {
 		qs[5] = new Query(head, head);
 		qs[6] = new Query(head.left, head.right.right.left);
 
-		// TarjanËã·¨½áºÏ²¢²é¼¯½â¾öËùÓĞ²éÑ¯ÎÊÌâ
+		// Tarjanç®—æ³•ç»“åˆå¹¶æŸ¥é›†è§£å†³æ‰€æœ‰æŸ¥è¯¢é—®é¢˜
 		Node[] ans = tarJanQuery(head, qs);
 
-		// ´òÓ¡´ğ°¸
+		// æ‰“å°ç­”æ¡ˆ
 		for (int i = 0; i != ans.length; i++) {
 			System.out.println("o1 : " + qs[i].o1.value);
 			System.out.println("o2 : " + qs[i].o2.value);

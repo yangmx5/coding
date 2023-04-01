@@ -19,7 +19,7 @@ public class BinarySearch {
 
     }
 
-    //¶ş·Ö²éÕÒ·Çµİ¹é·½·¨
+    //äºŒåˆ†æŸ¥æ‰¾éé€’å½’æ–¹æ³•
     public static int binarySearch(int[] arr, int num) {
 
         int low = 0;
@@ -36,7 +36,7 @@ public class BinarySearch {
         return -1;
     }
 
-    //¶ş·Ö²éÕÒµİ¹é·½·¨
+    //äºŒåˆ†æŸ¥æ‰¾é€’å½’æ–¹æ³•
     public static int binarySearch_2(int[] arr, int low, int high, int num) {
         if (low <= high) {
             int mid = (low + high) / 2;
@@ -50,7 +50,7 @@ public class BinarySearch {
             return -1;
     }
 
-    //ÇóÊı×éÖĞÏÂ±ß½çÎÊÌâ
+    //æ±‚æ•°ç»„ä¸­ä¸‹è¾¹ç•Œé—®é¢˜
     public static int getDown(int[] arr, int k) {
         int l, r;
         for (l = 0, r = arr.length;l<r;){
@@ -63,7 +63,7 @@ public class BinarySearch {
         return l;
     }
 
-    //ÇóÊı×éÖĞÉÏ±ß½çÎÊÌâ
+    //æ±‚æ•°ç»„ä¸­ä¸Šè¾¹ç•Œé—®é¢˜
     public static int getUp(int[] arr, int k) {
         int l, r;
         for (l = -1, r = arr.length - 1;l<r;){

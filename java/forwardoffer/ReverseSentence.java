@@ -4,7 +4,7 @@ public class ReverseSentence {
 
 	
 	/*
-	 * ·´×ª×Ö·û´®
+	 * åè½¬å­—ç¬¦ä¸²
 	 * 
 	 */
 	public static String Reversesentence(String str){

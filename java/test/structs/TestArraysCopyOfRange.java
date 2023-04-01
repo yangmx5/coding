@@ -10,7 +10,7 @@ public class TestArraysCopyOfRange {
 		
 		
 		Integer[] b = Arrays.copyOfRange(a, 1, 4);
-		//¿ªÊ¼ÏÂ±êÖÁµÚ¼¸¸öÔªËØ
+		//å¼€å§‹ä¸‹æ ‡è‡³ç¬¬å‡ ä¸ªå…ƒç´ 
 		
 		for(int i = 0 ;i < b.length ; i++){
 			System.out.println(b[i]);

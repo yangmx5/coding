@@ -1,7 +1,5 @@
 package Com.Xiecheng;
 
-import static org.hamcrest.CoreMatchers.containsString;
-
 import java.util.Scanner;
 
 public class Q3 {

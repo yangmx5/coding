@@ -6,8 +6,8 @@ public class PolishValue {
 	
 	
 	/*
-	 * ��׺����ʽ��ֵ
-	 * �沨��ʽ
+	 * 后缀表达式求值
+	 * 逆波兰式
 	 * 
 	 */
 

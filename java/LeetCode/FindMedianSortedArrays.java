@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.Arrays;
 
 /*
- * ÕÒÖĞÎ»Êı
+ * æ‰¾ä¸­ä½æ•°
  * 
  */
 public class FindMedianSortedArrays {

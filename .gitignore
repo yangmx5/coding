@@ -15,3 +15,4 @@ avengers/axe/local.sqlite3
 *.local.*
 avengers/axe/media/*
 avengers/log.txt
+*/output/*

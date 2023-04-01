@@ -1,10 +1,10 @@
 package Com.Toutiao;
 
 public class Dijkstra {
-    static int M=10000;//(´ËÂ·²»Í¨)
+    static int M=10000;//(æ­¤è·¯ä¸é€š)
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        int[][] weight1 = {//ÁÚ½Ó¾ØÕó
+        int[][] weight1 = {//é‚»æ¥çŸ©é˜µ
                 {0,3,2000,7,M},
                 {3,0,4,2,M},
                 {M,4,0,5,4},
@@ -24,29 +24,29 @@ public class Dijkstra {
         int[] shortPath = Dijsktra(weight2,start);
         
         for(int i = 0;i < shortPath.length;i++)
-             System.out.println("´Ó"+start+"³ö·¢µ½"+i+"µÄ×î¶Ì¾àÀëÎª£º"+shortPath[i]);  
+             System.out.println("ä»"+start+"å‡ºå‘åˆ°"+i+"çš„æœ€çŸ­è·ç¦»ä¸ºï¼š"+shortPath[i]);  
           
     }
    
 
     public static int[] Dijsktra(int[][] weight,int start){
-     //½ÓÊÜÒ»¸öÓĞÏòÍ¼µÄÈ¨ÖØ¾ØÕó£¬ºÍÒ»¸öÆğµã±àºÅstart£¨´Ó0±àºÅ£¬¶¥µã´æÔÚÊı×éÖĞ£©
-        //·µ»ØÒ»¸öint[] Êı×é£¬±íÊ¾´Óstartµ½ËüµÄ×î¶ÌÂ·¾¶³¤¶È
-        int n = weight.length;        //¶¥µã¸öÊı
-        int[] shortPath = new int[n];    //´æ·Å´Óstartµ½ÆäËû¸÷µãµÄ×î¶ÌÂ·¾¶
-        String[] path=new String[n]; //´æ·Å´Óstartµ½ÆäËû¸÷µãµÄ×î¶ÌÂ·¾¶µÄ×Ö·û´®±íÊ¾
+     //æ¥å—ä¸€ä¸ªæœ‰å‘å›¾çš„æƒé‡çŸ©é˜µï¼Œå’Œä¸€ä¸ªèµ·ç‚¹ç¼–å·startï¼ˆä»0ç¼–å·ï¼Œé¡¶ç‚¹å­˜åœ¨æ•°ç»„ä¸­ï¼‰
+        //è¿”å›ä¸€ä¸ªint[] æ•°ç»„ï¼Œè¡¨ç¤ºä»startåˆ°å®ƒçš„æœ€çŸ­è·¯å¾„é•¿åº¦
+        int n = weight.length;        //é¡¶ç‚¹ä¸ªæ•°
+        int[] shortPath = new int[n];    //å­˜æ”¾ä»startåˆ°å…¶ä»–å„ç‚¹çš„æœ€çŸ­è·¯å¾„
+        String[] path=new String[n]; //å­˜æ”¾ä»startåˆ°å…¶ä»–å„ç‚¹çš„æœ€çŸ­è·¯å¾„çš„å­—ç¬¦ä¸²è¡¨ç¤º
          for(int i=0;i<n;i++)
              path[i]=new String(start+"-->"+i);
-        int[] visited = new int[n];   //±ê¼Çµ±Ç°¸Ã¶¥µãµÄ×î¶ÌÂ·¾¶ÊÇ·ñÒÑ¾­Çó³ö,1±íÊ¾ÒÑÇó³ö
+        int[] visited = new int[n];   //æ ‡è®°å½“å‰è¯¥é¡¶ç‚¹çš„æœ€çŸ­è·¯å¾„æ˜¯å¦å·²ç»æ±‚å‡º,1è¡¨ç¤ºå·²æ±‚å‡º
         
-        //³õÊ¼»¯£¬µÚÒ»¸ö¶¥µãÇó³ö
+        //åˆå§‹åŒ–ï¼Œç¬¬ä¸€ä¸ªé¡¶ç‚¹æ±‚å‡º
         shortPath[start] = 0;
         visited[start] = 1;
 
-        for(int count = 1;count <= n - 1;count++)  //Òª¼ÓÈën-1¸ö¶¥µã
+        for(int count = 1;count <= n - 1;count++)  //è¦åŠ å…¥n-1ä¸ªé¡¶ç‚¹
         {
  
-            int k = -1;    //Ñ¡³öÒ»¸ö¾àÀë³õÊ¼¶¥µãstart×î½üµÄÎ´±ê¼Ç¶¥µã
+            int k = -1;    //é€‰å‡ºä¸€ä¸ªè·ç¦»åˆå§‹é¡¶ç‚¹startæœ€è¿‘çš„æœªæ ‡è®°é¡¶ç‚¹
             int dmin = Integer.MAX_VALUE;
             for(int i = 0;i < n;i++)
             {
@@ -60,12 +60,12 @@ public class Dijkstra {
             }
             System.out.println("k="+k);
              
-            //½«ĞÂÑ¡³öµÄ¶¥µã±ê¼ÇÎªÒÑÇó³ö×î¶ÌÂ·¾¶£¬ÇÒµ½startµÄ×î¶ÌÂ·¾¶¾ÍÊÇdmin
+            //å°†æ–°é€‰å‡ºçš„é¡¶ç‚¹æ ‡è®°ä¸ºå·²æ±‚å‡ºæœ€çŸ­è·¯å¾„ï¼Œä¸”åˆ°startçš„æœ€çŸ­è·¯å¾„å°±æ˜¯dmin
             shortPath[k] = dmin;
 
             visited[k] = 1;
   
-            //ÒÔkÎªÖĞ¼äµã£¬ĞŞÕı´Óstartµ½Î´·ÃÎÊ¸÷µãµÄ¾àÀë
+            //ä»¥kä¸ºä¸­é—´ç‚¹ï¼Œä¿®æ­£ä»startåˆ°æœªè®¿é—®å„ç‚¹çš„è·ç¦»
             for(int i = 0;i < n;i++)
             {                 // System.out.println("k="+k);
                 if(visited[i] == 0 && weight[start][k] + weight[k][i] < weight[start][i]){
@@ -79,7 +79,7 @@ public class Dijkstra {
      
         }
          for(int i=0;i<n;i++)
-           System.out.println("´Ó"+start+"³ö·¢µ½"+i+"µÄ×î¶ÌÂ·¾¶Îª£º"+path[i]);  
+           System.out.println("ä»"+start+"å‡ºå‘åˆ°"+i+"çš„æœ€çŸ­è·¯å¾„ä¸ºï¼š"+path[i]);  
          System.out.println("=====================================");
       
         return shortPath;

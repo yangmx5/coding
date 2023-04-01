@@ -12,22 +12,22 @@ class Node {
 }
 
 /*
- * ²»¿É±äÁ´±íÊµÏÖ
+ * ä¸å¯å˜é“¾è¡¨å®ç°
  * 
- * ÓëÆÕÍ¨i++²Ù×÷¶Ô±È
+ * ä¸æ™®é€ši++æ“ä½œå¯¹æ¯”
  * 
  */
 public class IncrementI {
 
-	public  static Node node = new Node(0, null);//Á´±íÍ·
+	public  static Node node = new Node(0, null);//é“¾è¡¨å¤´
 
-	//Ã¿´Î´´½¨Ò»¸öĞÂµÄÖµÎª1µÄ½Úµã·ÅÔÚÁ´±íÍ·²¿
+	//æ¯æ¬¡åˆ›å»ºä¸€ä¸ªæ–°çš„å€¼ä¸º1çš„èŠ‚ç‚¹æ”¾åœ¨é“¾è¡¨å¤´éƒ¨
 	public static  void Increment() {
 		Node temp = new Node(1, node);
 		node = temp;
 	}
 
-	//¼ÆËãÁ´±íÖĞµÄÔªËØÖµµÃ×ÜºÍ
+	//è®¡ç®—é“¾è¡¨ä¸­çš„å…ƒç´ å€¼å¾—æ€»å’Œ
 	public static Integer getCount() {
 		Integer result = 0;
 		while (node != null) {

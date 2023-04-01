@@ -26,7 +26,7 @@ public class ScrambleString {
 			}
 		}
 		
-		//Êä³öÈıÎ¬dp¾ØÕó
+		//è¾“å‡ºä¸‰ç»´dpçŸ©é˜µ
 		for(int i = 0 ; i < dp[0][0].length ; i++){
 			for(int j = 0 ; j  <dp[0].length ; j++){
 				for(int m = 0 ; m < dp.length ; m++){

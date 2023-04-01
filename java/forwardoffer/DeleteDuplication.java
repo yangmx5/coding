@@ -1,22 +1,15 @@
 package forwardoffer;
 
-import java.awt.List;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Stack;
-
-import org.junit.Test;
-
 import entities.ListNode;
 
 
 /*
- * É¾³ıÁ´±íÖĞÖØ¸´ÔªËØ
+ * åˆ é™¤é“¾è¡¨ä¸­é‡å¤å…ƒç´ 
  * 
  */
 public class DeleteDuplication {
 
-	public ListNode deleteDuplication(ListNode pHead) {
+	public static ListNode deleteDuplication(ListNode pHead) {
 
 		ListNode first = new ListNode(-1);
         first.next = pHead;
@@ -44,8 +37,7 @@ public class DeleteDuplication {
         return pHead;
 	}
 
-	@Test
-	public void test() {
+	public static void test() {
 		
 		String [] a = new String[]{"1","2"};
 		

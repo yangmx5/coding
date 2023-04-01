@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.HashMap;
 
 /*
- * ×î³¤²»ÖØ¸´×Ö·û´®
+ * æœ€é•¿ä¸é‡å¤å­—ç¬¦ä¸²
  */
 public class NotRepeatedString {
 

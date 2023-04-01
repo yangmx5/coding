@@ -23,7 +23,7 @@ public class UniqueBinarySearchTrees {
 	}
 	
 	/*
-	 * 递归获取可能存在的所有二叉搜索树
+	 * 閫掑綊鑾峰彇鍙兘瀛樺湪鐨勬墍鏈変簩鍙夋悳绱㈡爲
 	 */
 
 	public List<TreeNode> generateTrees(int n) {
@@ -71,7 +71,7 @@ public class UniqueBinarySearchTrees {
     }
 
     /*
-     * 动态规划法获取
+     * 鍔ㄦ�佽鍒掓硶鑾峰彇
      */
     public static List<TreeNode> generateTreesInDP(int n) {
         List<TreeNode>[] result = new List[n + 1];

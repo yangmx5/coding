@@ -7,7 +7,7 @@ public class Q1 {
         Scanner in = new Scanner(System.in);
         
         ArrayList<Integer> arr  = new ArrayList<Integer>();
-        while (in.hasNextInt()) {//注意while处理多个case
+        while (in.hasNextInt()) {//娉ㄦ剰while澶勭悊澶氫釜case
             int a = in.nextInt();
             arr.add(a);
         }

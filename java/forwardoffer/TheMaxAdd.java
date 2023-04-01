@@ -8,7 +8,7 @@ public class TheMaxAdd {
 
 	
 	/*
-	 * 子数组最大连续和
+	 * 瀛愭暟缁勬渶澶ц繛缁拰
 	 *
 	 */
 	

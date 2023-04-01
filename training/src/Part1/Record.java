@@ -1,3 +1,5 @@
+package src.Part1;
+
 public class Record {
     /*
       记录每笔转账交易,维护余额修改日志ID

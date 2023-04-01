@@ -8,7 +8,7 @@ public class Problem_04_SubMatrixMaxSum {
 		}
 		int max = Integer.MIN_VALUE;
 		int cur = 0;
-		int[] s = null; // ÀÛ¼ÓÊý×é
+		int[] s = null; // ç´¯åŠ æ•°ç»„
 		for (int i = 0; i != m.length; i++) {
 			s = new int[m[0].length];
 			for (int j = i; j != m.length; j++) {

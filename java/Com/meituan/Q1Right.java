@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 
 /*
- *  //��¼���������ͬ��ǰ׺�͵���С�±������±�  
-            max[mod] = Math.max(max[mod], i);//��ͬ�������±���������������±�  
-            min[mod] = Math.min(min[mod], i);//������С�±�  
-            // ��� a%b = c%b ,��a-c = b*k,kΪ����  
+ *  //记录整个数组的同余前缀和的最小下标和最大下标  
+            max[mod] = Math.max(max[mod], i);//相同余数的下标存进来，保留最大下标  
+            min[mod] = Math.min(min[mod], i);//保留最小下标  
+            // 如果 a%b = c%b ,则a-c = b*k,k为常数  
         }  
   
-        //Ȼ��ͬ��ǰ׺�͵�����±�����С�±�֮�ȡ������ֵ������󳤶�  
+        //然后，同余前缀和的最大下标与最小下标之差，取差的最大值就是最大长度  
  */
 public class Q1Right {
 	public static void main(String[] args) {

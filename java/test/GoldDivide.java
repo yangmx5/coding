@@ -3,7 +3,7 @@ package test;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-//³¤¹¤·Ö½ğÌõ
+//é•¿å·¥åˆ†é‡‘æ¡
 
 public class GoldDivide {
 
@@ -15,7 +15,7 @@ public class GoldDivide {
 
 	}
 
-	//Ã¿´ÎÑ­»·Ê¹ÓÃÊı×éÅÅĞò
+	//æ¯æ¬¡å¾ªç¯ä½¿ç”¨æ•°ç»„æ’åº
 	public static Integer getCount(Integer[] employee) {
 
 		int result = 0;
@@ -44,7 +44,7 @@ public class GoldDivide {
 	}
 
 	
-	//Ê¹ÓÃÓÅÏÈ¶ÓÁĞ
+	//ä½¿ç”¨ä¼˜å…ˆé˜Ÿåˆ—
 	public static Integer getCountByUsePriorityQueue(Integer[] employee) {
 
 		int result = 0;

@@ -2,6 +2,8 @@ package hotOneHundred.dp;
 
 import common.CommonUtil;
 
+import java.util.Arrays;
+
 /**
  * @date 2023/3/27
  * 最长递增子序列
@@ -26,6 +28,26 @@ public class LongestChildSequence {
         }
 
         CommonUtil.printArray(dp);
+
+        System.out.println(dp(arr));
+    }
+
+    public static int dp(int[] arr) {
+        int[] dp = new int[arr.length];
+        Arrays.fill(dp, 1);
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[i] > arr[j]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
+        }
+
+        int ret = 0;
+        for (int i = 0; i < dp.length; i++) {
+            ret = Math.max(dp[i], ret);
+        }
+        return ret;
     }
 
 }

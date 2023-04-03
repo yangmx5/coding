@@ -25,6 +25,11 @@ public class LowestCoinSum {
         System.out.println(buffer.toString());
     }
 
+    /**
+     * @param coins
+     * @param amount
+     * @return
+     */
     public static int dp(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
         Arrays.fill(dp, amount+1);

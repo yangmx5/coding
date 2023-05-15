@@ -45,6 +45,55 @@ public class LinkListSort {
         ListNode head = genListNodeList(Arrays.asList(2, 3, 4, 5, 1));
         ListNode ret = sort(head, null);
         printListNode(ret);
+
+        ListNode ret2 = sortCopy(head, null);
+        printListNode(ret2);
+    }
+
+    public static ListNode sortCopy(ListNode head, ListNode tail) {
+        if(head == null){
+            return null;
+        }
+        if (head.next == tail) {
+            head.next = null;
+            return head;
+        }
+
+        ListNode f = head, s = head;
+        while (f != tail) {
+            f = f.next;
+            s = s.next;
+            if (f != tail) {
+                f = f.next;
+            }
+        }
+        ListNode mid = s;
+        ListNode l1 = sortCopy(head, mid);
+        ListNode l2 = sortCopy(mid, tail);
+        return mergeList(l1, l2);
+    }
+
+    public static ListNode mergeList(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(-1, null);
+        ListNode p = dummyHead;
+        while (l1 != null && l2 != null) {
+            if (l1.value > l2.value) {
+                p.next = l1;
+                p = p.next;
+                l1 = l1.next;
+            } else {
+                p.next = l2;
+                p = p.next;
+                l2 = l2.next;
+            }
+        }
+        if (l1 != null) {
+            p.next = l1;
+        }
+        if (l2 != null) {
+            p.next = l2;
+        }
+        return dummyHead.next;
     }
 
     /**

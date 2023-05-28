@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * @author fouthed
  * @date 2023/5/6
+ * 三个颜色，将颜色进行分类，分成 0，0，1，1，2，2 的结果
+ * 思路：双指针，分别从前后进行遍历，将 0 全部置换到左侧，将 2全部置换到右侧
  */
 public class ColorDiff {
 

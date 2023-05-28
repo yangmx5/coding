@@ -16,3 +16,4 @@ avengers/axe/local.sqlite3
 avengers/axe/media/*
 avengers/log.txt
 */output/*
+*DS_Store*

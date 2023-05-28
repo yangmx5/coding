@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @author fouthed
  * @date 2023/5/15
+ *
  */
 public class DailyTemperature {
     public static void main(String[] args) {

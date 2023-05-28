@@ -2,6 +2,10 @@ package hotOneHundred;
 
 import java.util.*;
 
+/**
+ * 将字符串数据按照 字母异位词进行分组
+ * 通过创建相同的 key 进行遍历分组
+ */
 public class GroupAnagrams {
 
     public static void main(String[] args) {

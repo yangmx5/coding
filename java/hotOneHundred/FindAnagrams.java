@@ -7,6 +7,8 @@ import java.util.List;
 /**
  * @author fouthed
  * @date 2023/5/15
+ * 找出字符串中 abc 的全排列集合所在的索引
+ * 思路：统计统一长度的字符串中，相同字母出现的次数，当出现次数一致时，认为两个字符串相等
  */
 public class FindAnagrams {
 

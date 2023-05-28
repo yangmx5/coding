@@ -2,6 +2,9 @@ package hotOneHundred;
 
 /**
  * @date 2023/3/30
+ * 链表 大数相加
+ * 思路：链表反转，两个链表相加
+ * 相加结果再反转
  */
 public class ListNodeIntegerAdd {
 

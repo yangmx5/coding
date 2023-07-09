@@ -14,7 +14,8 @@ public class CourseBfs {
         int num = 2;
         int [][] pre = new int[][]{{1,0},{0,1}};
 
-        System.out.println(canFinish(num,pre));
+        int[][] pre2 = new int[][]{{1, 0}};
+        System.out.println(canFinish(num,pre2));
 
     }
 

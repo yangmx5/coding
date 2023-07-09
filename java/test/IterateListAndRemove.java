@@ -34,5 +34,14 @@ public class IterateListAndRemove {
             l.removeIf(m -> m == 1);
         }
         System.out.println(Arrays.toString(l.toArray()));
+
+
+        Object obj = null;
+        String str = String.valueOf(obj);
+        System.out.printf(str);
+
+        if (str == null) {
+            str = "null";
+        }
     }
 }
